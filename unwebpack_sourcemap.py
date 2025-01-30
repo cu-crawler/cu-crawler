@@ -57,31 +57,32 @@ class SourceMapExtractor(object):
 
     def __init__(self, options):
         """Initialize the class."""
-        if 'output_directory' not in options:
+        if "output_directory" not in options:
             raise SourceMapExtractorError("output_directory must be set in options.")
         else:
-            self._output_directory = os.path.abspath(options['output_directory'])
+            self._output_directory = os.path.abspath(options["output_directory"])
             if not os.path.isdir(self._output_directory):
-                if options['make_directory'] is True:
+                if options["make_directory"] is True:
                     os.mkdir(self._output_directory)
                 else:
                     raise SourceMapExtractorError(
-                        "output_directory does not exist. Pass --make-directory to auto-make it.")
+                        "output_directory does not exist. Pass --make-directory to auto-make it."
+                    )
 
         self._path_sanitiser = PathSanitiser(self._output_directory)
 
-        if options['disable_ssl_verification'] == True:
+        if options["disable_ssl_verification"] == True:
             self.disable_verify_ssl = True
         else:
             self.disable_verify_ssl = False
 
-        if options['local'] == True:
+        if options["local"] == True:
             self._is_local = True
 
-        if options['detect'] == True:
+        if options["detect"] == True:
             self._attempt_sourcemap_detection = True
 
-        self._validate_target(options['uri_or_file'])
+        self._validate_target(options["uri_or_file"])
 
     def run(self):
         """Run extraction process."""
@@ -103,14 +104,19 @@ class SourceMapExtractor(object):
             self._target = os.path.abspath(target)
             if not os.path.isfile(self._target):
                 raise SourceMapExtractorError(
-                    "uri_or_file is set to be a file, but doesn't seem to exist. check your path.")
+                    "uri_or_file is set to be a file, but doesn't seem to exist. check your path."
+                )
         else:
             if parsed.scheme == "":
-                raise SourceMapExtractorError("uri_or_file isn't a URI, and --local was not set. set --local?")
+                raise SourceMapExtractorError(
+                    "uri_or_file isn't a URI, and --local was not set. set --local?"
+                )
             file, ext = os.path.splitext(parsed.path)
             self._target = target
-            if ext != '.map' and self._attempt_sourcemap_detection is False:
-                print("WARNING: URI does not have .map extension, and --detect is not flagged.")
+            if ext != ".map" and self._attempt_sourcemap_detection is False:
+                print(
+                    "WARNING: URI does not have .map extension, and --detect is not flagged."
+                )
 
     def _parse_remote_sourcemap(self, uri):
         """GET a remote sourcemap and parse it."""
@@ -125,10 +131,12 @@ class SourceMapExtractor(object):
         remote_sourcemaps = []
         data, final_uri = self._get_remote_data(uri)
 
-        if final_uri.endswith('.js'):
+        if final_uri.endswith(".js"):
             print("Detecting sourcemaps in JS at %s" % final_uri)
             # trick to not send the same request twice
-            self._enrich_with_remote_sourcemaps('tgcrawl', remote_sourcemaps, js_data=data, last_target_uri=final_uri)
+            self._enrich_with_remote_sourcemaps(
+                "tgcrawl", remote_sourcemaps, js_data=data, last_target_uri=final_uri
+            )
             return remote_sourcemaps
 
         # TODO: scan to see if this is a sourcemap instead of assuming HTML
@@ -140,9 +148,9 @@ class SourceMapExtractor(object):
             raise SourceMapExtractorError("Could not parse HTML at URI %s" % final_uri)
 
         for script in soup:
-            source = script['src']
+            source = script["src"]
             parsed_uri = urlparse(source)
-            if parsed_uri.scheme != '':
+            if parsed_uri.scheme != "":
                 next_target_uri = source
             else:
                 current_uri = urlparse(final_uri)
@@ -152,7 +160,9 @@ class SourceMapExtractor(object):
 
         return remote_sourcemaps
 
-    def _enrich_with_remote_sourcemaps(self, next_target_uri, remote_sourcemaps, js_data=None, last_target_uri=None):
+    def _enrich_with_remote_sourcemaps(
+        self, next_target_uri, remote_sourcemaps, js_data=None, last_target_uri=None
+    ):
         if last_target_uri is None or js_data is None:
             js_data, last_target_uri = self._get_remote_data(next_target_uri)
 
@@ -163,15 +173,19 @@ class SourceMapExtractor(object):
         if matches:
             asset = matches.groups(0)[0].strip()
             asset_target = urlparse(asset)
-            if asset_target.scheme != '':
+            if asset_target.scheme != "":
                 print("Detected sourcemap at remote location %s" % asset)
                 remote_sourcemaps.append(asset)
             else:
                 current_uri = urlparse(last_target_uri)
-                asset_uri = current_uri.scheme + '://' + \
-                            current_uri.netloc + \
-                            os.path.dirname(current_uri.path) + \
-                            '/' + asset
+                asset_uri = (
+                    current_uri.scheme
+                    + "://"
+                    + current_uri.netloc
+                    + os.path.dirname(current_uri.path)
+                    + "/"
+                    + asset
+                )
                 print("Detected sourcemap at remote location %s" % asset_uri)
                 remote_sourcemaps.append(asset_uri)
 
@@ -179,7 +193,7 @@ class SourceMapExtractor(object):
         map_data = ""
         if is_str is False:
             if os.path.isfile(target):
-                with open(target, 'r', encoding='utf-8', errors='ignore') as f:
+                with open(target, "r", encoding="utf-8", errors="ignore") as f:
                     map_data = f.read()
         else:
             map_data = target
@@ -188,19 +202,24 @@ class SourceMapExtractor(object):
         try:
             map_object = json.loads(map_data)
         except json.JSONDecodeError:
-            print("ERROR: Failed to parse sourcemap %s. Are you sure this is a sourcemap?" % target)
+            print(
+                "ERROR: Failed to parse sourcemap %s. Are you sure this is a sourcemap?"
+                % target
+            )
             return False
 
         # we need `sourcesContent` and `sources`.
         # do a basic validation check to make sure these exist and agree.
-        if 'sources' not in map_object or 'sourcesContent' not in map_object:
-            print("ERROR: Sourcemap does not contain sources and/or sourcesContent, cannot extract.")
+        if "sources" not in map_object or "sourcesContent" not in map_object:
+            print(
+                "ERROR: Sourcemap does not contain sources and/or sourcesContent, cannot extract."
+            )
             return False
 
-        if len(map_object['sources']) != len(map_object['sourcesContent']):
+        if len(map_object["sources"]) != len(map_object["sourcesContent"]):
             print("WARNING: sources != sourcesContent, filenames may not match content")
 
-        for source, content in zip(map_object['sources'], map_object['sourcesContent']):
+        for source, content in zip(map_object["sources"], map_object["sourcesContent"]):
             # remove webpack:// from paths
             # and do some checks on it
             write_path = self._get_sanitised_file_path(source)
@@ -209,7 +228,9 @@ class SourceMapExtractor(object):
                 continue
 
             os.makedirs(os.path.dirname(write_path), mode=0o755, exist_ok=True)
-            with open(write_path, 'w', encoding='utf-8', errors='ignore', newline='') as f:
+            with open(
+                write_path, "w", encoding="utf-8", errors="ignore", newline=""
+            ) as f:
                 print("Writing %s..." % os.path.basename(write_path))
                 f.write(content)
 
@@ -219,15 +240,18 @@ class SourceMapExtractor(object):
         exts = sourcePath.split(" ")
 
         if exts[0] == "external":
-            print("WARNING: Found external sourcemap %s, not currently supported. Skipping" % exts[1])
+            print(
+                "WARNING: Found external sourcemap %s, not currently supported. Skipping"
+                % exts[1]
+            )
             return None
 
         path, filename = os.path.split(sourcePath)
-        if path[:2] == './':
+        if path[:2] == "./":
             path = path[2:]
-        if path[:3] == '../':
-            path = 'parent_dir/' + path[3:]
-        if path[:1] == '.':
+        if path[:3] == "../":
+            path = "parent_dir/" + path[3:]
+        if path[:1] == ".":
             path = ""
 
         filepath = self._path_sanitiser.make_valid_file_path(path, filename)
@@ -246,10 +270,13 @@ class SourceMapExtractor(object):
             return self._get_remote_data(result.url)
 
         if result.status_code == 200:
-            result.encoding = 'utf-8'
+            result.encoding = "utf-8"
             return result.text, result.url
         else:
-            print("WARNING: Got status code %d for URI %s" % (result.status_code, result.url))
+            print(
+                "WARNING: Got status code %d for URI %s"
+                % (result.status_code, result.url)
+            )
             return None, result.url
 
 
@@ -277,19 +304,25 @@ class PathSanitiser(object):
 
     def sanitise_filesystem_name(self, potential_file_path_name):
         # Sort out unicode characters
-        valid_filename = normalize('NFKD', potential_file_path_name).encode('ascii', 'ignore').decode('ascii')
+        valid_filename = (
+            normalize("NFKD", potential_file_path_name)
+            .encode("ascii", "ignore")
+            .decode("ascii")
+        )
         # Replace path separators with underscores
         for sep in self.os_path_separators():
-            valid_filename = valid_filename.replace(sep, '_')
+            valid_filename = valid_filename.replace(sep, "_")
         # Ensure only valid characters
         valid_chars = "-_.() {0}{1}".format(string.ascii_letters, string.digits)
         valid_filename = "".join(ch for ch in valid_filename if ch in valid_chars)
         # Ensure at least one letter or number to ignore names such as '..'
         valid_chars = "{0}{1}".format(string.ascii_letters, string.digits)
-        test_filename = "".join(ch for ch in potential_file_path_name if ch in valid_chars)
+        test_filename = "".join(
+            ch for ch in potential_file_path_name if ch in valid_chars
+        )
         if len(test_filename) == 0:
             # Replace empty file name or file path part with the following
-            valid_filename = self.EMPTY_NAME + '_' + str(self.empty_idx)
+            valid_filename = self.EMPTY_NAME + "_" + str(self.empty_idx)
 
             # MODIFIED BY MARSHALX
             # self.empty_idx += 1
@@ -302,7 +335,7 @@ class PathSanitiser(object):
         filepath = os.path.abspath(filepath)
         # ensure trailing path separator (/)
         if not any(filepath[-1] == sep for sep in self.os_path_separators()):
-            filepath = '{0}{1}'.format(filepath, os.path.sep)
+            filepath = "{0}{1}".format(filepath, os.path.sep)
         self.ensure_directory_exists(filepath)
         return filepath
 
@@ -325,11 +358,13 @@ class PathSanitiser(object):
     def sanitise_filesystem_path(self, potential_file_path):
         # Splits up a path and sanitises the name of each part separately
         path_parts_list = self.path_split_into_list(potential_file_path)
-        sanitised_path = ''
+        sanitised_path = ""
         for path_component in path_parts_list:
-            sanitised_path = '{0}{1}{2}'.format(sanitised_path,
-                                                self.sanitise_filesystem_name(path_component),
-                                                os.path.sep)
+            sanitised_path = "{0}{1}{2}".format(
+                sanitised_path,
+                self.sanitise_filesystem_name(path_component),
+                os.path.sep,
+            )
         return sanitised_path
 
     def check_if_path_is_under(self, parent_path, child_path):
@@ -346,7 +381,9 @@ class PathSanitiser(object):
             sanitised_path = self.sanitise_filesystem_path(path)
             if filename:
                 sanitised_filename = self.sanitise_filesystem_name(filename)
-                complete_path = os.path.join(root_path, sanitised_path, sanitised_filename)
+                complete_path = os.path.join(
+                    root_path, sanitised_path, sanitised_filename
+                )
             else:
                 complete_path = os.path.join(root_path, sanitised_path)
         else:
@@ -368,21 +405,41 @@ class SourceMapExtractorError(Exception):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="A tool to extract code from Webpack sourcemaps. Turns black boxes into gray ones.")
+        description="A tool to extract code from Webpack sourcemaps. Turns black boxes into gray ones."
+    )
     parser.add_argument("-l", "--local", action="store_true", default=False)
-    parser.add_argument("-d", "--detect", action="store_true", default=False,
-                        help="Attempt to detect sourcemaps from JS assets in retrieved HTML.")
-    parser.add_argument("--make-directory", action="store_true", default=False,
-                        help="Make the output directory if it doesn't exist.")
-    parser.add_argument("--dangerously-write-paths", action="store_true", default=False,
-                        help="Write full paths. WARNING: Be careful here, you are pulling directories from an untrusted source.")
-    parser.add_argument("--disable-ssl-verification", action="store_true", default=False,
-                        help="The script will not verify the site's SSL certificate.")
+    parser.add_argument(
+        "-d",
+        "--detect",
+        action="store_true",
+        default=False,
+        help="Attempt to detect sourcemaps from JS assets in retrieved HTML.",
+    )
+    parser.add_argument(
+        "--make-directory",
+        action="store_true",
+        default=False,
+        help="Make the output directory if it doesn't exist.",
+    )
+    parser.add_argument(
+        "--dangerously-write-paths",
+        action="store_true",
+        default=False,
+        help="Write full paths. WARNING: Be careful here, you are pulling directories from an untrusted source.",
+    )
+    parser.add_argument(
+        "--disable-ssl-verification",
+        action="store_true",
+        default=False,
+        help="The script will not verify the site's SSL certificate.",
+    )
 
     parser.add_argument("uri_or_file", help="The target URI or file.")
-    parser.add_argument("output_directory", help="Directory to output from sourcemap to.")
+    parser.add_argument(
+        "output_directory", help="Directory to output from sourcemap to."
+    )
 
-    if (len(sys.argv) < 3):
+    if len(sys.argv) < 3:
         parser.print_usage()
         sys.exit(1)
 

@@ -35,7 +35,6 @@ jobs:
         env:
           OUTPUT_FILENAME: "tracked_links_ci.txt"
           OUTPUT_RESOURCES_FILENAME: "tracked_res_links_ci.txt"
-          OUTPUT_TRANSLATIONS_FILENAME: "tracked_tr_links_ci.txt"
         run: |
           python make_tracked_links_list.py
 
@@ -45,7 +44,6 @@ jobs:
 
           mv tracked_links_ci.txt tracked_links.txt
           mv tracked_res_links_ci.txt tracked_res_links.txt
-          mv tracked_tr_links_ci.txt tracked_tr_links.txt
 
           git config --global user.email "github-action@users.noreply.github.com"
           git config --global user.name "GitHub Action"
