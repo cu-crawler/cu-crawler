@@ -1,0 +1,120 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+#standings_fixed {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    margin-top: 1px;
+}
+
+#standings thead {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+td {
+    background: white;
+    border: 1px solid gray;
+    padding: 2px;
+    text-align: center;
+    height: 1.5em;
+    white-space: nowrap;
+    border-top: none;
+    border-left: none;
+}
+
+td.name {
+    text-align: left;
+}
+
+td.problem_letter {
+    min-width: 1.5em;
+    width: 1.5em;
+}
+
+td.ok {
+    background-color: lightgreen;
+}
+
+td.bad {
+    background-color: lightcoral;
+}
+
+td.gray {
+    background-color: rgb(240, 240, 240);
+}
+
+td.contest_title {
+
+}
+
+td.invisible {
+    width: 0;
+    border: none;
+    background: none;
+}
+
+a {
+    color: #2a6478;
+    text-decoration: none;
+}
+
+p.small {
+    display: inline;
+    font-family: monospace;
+}
+
+.defense {
+    background-image: url('/static/defense_mini.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white !important;
+}
+
+.defense .big_image {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.25s ease-in-out;
+    border: 1px solid black;
+}
+
+.defense:hover .big_image {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    z-index: 200;
+    left: 50%;
+    margin-left: -128px;
+    top: 50%;
+    margin-top: -150px;
+    background-image: url('/static/defense_big.png');
+    background-size: contain;
+    width: 256px;
+    height: 319px;
+}
+
+.ban {
+    background-image: url('/static/ban.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #E1E0DE !important;
+}
