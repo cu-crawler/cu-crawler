@@ -287,7 +287,7 @@ async def crawl_worker(session: aiohttp.ClientSession):
                 logger.warning(f"Url {url} failed after {attempt} attempts, ignoring")
                 continue
 
-            logger.warning(f"Client or timeout error: {e.__type__.__name__}: {e}. Retrying {url} (attempt #1{attempt})")
+            logger.warning(f"Client or timeout error: {e}. Retrying {url} (attempt #1{attempt})")
 
             WORKERS_TASK_QUEUE.put_nowait(url)
             if url in VISITED_LINKS:
@@ -309,7 +309,7 @@ async def _crawl(url: str, session: aiohttp.ClientSession):
             if 499 < response.status < 600:
                 VISITED_LINKS.remove(url)
                 logger.warning(f"Error 5XX. Retrying {url}")
-                raise ServerSideError()
+                raise ServerSideError(f"{response.status} code")
 
             if response.status not in {200, 304}:
                 if response.status != 302:
