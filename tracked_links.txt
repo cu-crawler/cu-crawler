@@ -63,11 +63,13 @@ centraluniversity.ru/courses
 centraluniversity.ru/courses/cv
 centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
+centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
+centraluniversity.ru/hotel/cloud
 centraluniversity.ru/hotel/cosmos
 centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
@@ -361,7 +363,9 @@ legal.centraluniversity.ru/education/programm/work
 legal.centraluniversity.ru/edustandarts
 legal.centraluniversity.ru/employees
 legal.centraluniversity.ru/grants
+legal.centraluniversity.ru/inter
 legal.centraluniversity.ru/meal
+legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/ovz
 legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
