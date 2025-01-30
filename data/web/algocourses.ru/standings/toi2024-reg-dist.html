@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>Регион. Дист 👻</title>
+    <script src="https://www.cdn-tinkoff.ru/twa/v5/bundles/generic/client.js?ttm=tinkoff-pwa_algocourses" type="text/javascript" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/standings.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+    <script>
+        var standings_label = "toi2024-reg-dist";
+        var contest_id = -1;
+        var is_olymp = true;
+        var is_blitz = false;
+        var enable_marks = false;
+    </script>
+    <script src="/static/standings.js"></script>
+    
+    <script>
+        var newCalculateContestMark = function(
+    total_scores,       // двумерный массив пар балла и времени сдачи задач пользователями
+    user_id,            // номер пользователя
+    contest_info        // информация о контесте
+) {
+    return useOldContestMark(total_scores, user_id)
+};
+        var calculateTotalMark = function(
+	marks,              // массив оценок за контесты
+	coefficients,        //  массив коэффициентов контесто
+	total_score,        // суммарный балл за все контесты
+	contest_score,      // массив баллов за контесты
+	contest_max_score,  // массив максимальных набранных баллов за контесты
+	problem_score,      // двумерный массив набранных баллов за задачи
+	problem_max_score,  // двумерный массив максимальных набранных баллов за задач
+	total_users,        // общее количество участников
+	problem_accepted    // двумерный массив количества ОК по задаче
+){
+	return defaultTotalMark(marks, coefficients);
+};
+        
+    </script>
+    <base href="/standings/toi2024-reg-dist/" />
+    
+</head>
+
+<body>
+
+<table id="standings_fixed"></table>
+<div class="wrapper">
+    <table id="standings"></table>
+</div>
+
+</body>
+</html>

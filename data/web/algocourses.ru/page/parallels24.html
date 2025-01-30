@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Параллели</title>
+    <style>
+        code {
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px
+        }
+
+        code, kbd {
+            padding: 2px 4px
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, monospace
+        }
+
+        html {
+            font-size: .875em;
+            background: #fff;
+            color: #373D49
+        }
+
+        html, body {
+            font-family: Georgia, Cambria, serif;
+            height: 100%
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+            font-style: normal;
+            font-weight: 600;
+            margin-top: 0
+        }
+
+        p {
+            padding-top: .66001rem;
+            font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+            margin-top: 0
+        }
+
+        p, pre {
+            margin-bottom: 1.33999rem
+        }
+
+        body {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 2rem
+        }
+
+        ul, ol {
+            margin: 0;
+            /*margin-bottom: .83999rem;*/
+            padding-top: .16001rem
+        }
+
+        li {
+            font-feature-settings: 'kern' 1, 'onum' 1, 'liga' 1;
+            margin-left: 1rem
+        }
+
+        pre {
+            padding-left: 10px;
+            font-family: monospace;
+            border: 1px solid #c7254e;
+            background-color: #f9f2f4;
+        }
+
+        body {
+            max-width: 1024px;
+            margin: 0 auto;
+            overflow: auto;
+            padding: 2%
+        }
+
+        h1 {
+            line-height: 3rem;
+            font-size: 2.0571429rem;
+            margin-bottom: .21999rem;
+            padding-top: .78001rem
+        }
+
+        h2 {
+            font-size: 1.953125rem;
+            margin-bottom: .1835837rem;
+            padding-top: .8164163rem
+        }
+
+        h2, h3 {
+            line-height: 3rem
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 1.6457143rem;
+            margin-bottom: .07599rem;
+            padding-top: 3.45rem;
+        }
+
+        h4 {
+            font-size: 1.5625rem;
+            margin-bottom: .546865rem;
+            padding-top: .453135rem
+        }
+
+        h5 {
+            font-size: 1.25rem;
+            margin-bottom: -.56251rem;
+            padding-top: .56251rem
+        }
+
+        h6 {
+            font-size: 1rem;
+            margin-bottom: -.65001rem;
+            padding-top: .65001rem
+        }
+
+        a {
+            cursor: pointer;
+            color: #35D7BB;
+            text-decoration: none
+        }
+
+        a:hover, a:focus {
+            border-bottom-color: #35D7BB;
+            color: #dff9f4
+        }
+
+        button, input, optgroup, select, textarea {
+            color: inherit;
+            font: inherit;
+            margin: 0
+        }
+
+        button {
+            overflow: visible
+        }
+
+        button, select {
+            text-transform: none
+        }
+
+        #maket {
+            width: 100%; /* Ширина всей таблицы */
+        }
+
+        TD {
+            vertical-align: top; /* Вертикальное выравнивание в ячейках */
+            padding: 5px; /* Поля вокруг ячеек */
+        }
+
+        TD#leftcol {
+            width: 47.5%; /* Ширина левой колонки */
+            border: none; /* Параметры рамки */
+            text-align: center;
+        }
+
+        TD#rightcol {
+            width: 47.5%;
+            border: none; /* Параметры рамки */
+            text-align: center;
+        }
+
+        #spacer {
+            width: 5%; /* Расстояние между колонками */
+        }
+
+        .collapsible {
+            background-color: white;
+            /*color: white;*/
+            cursor: pointer;
+            padding: 10px;
+            width: 75%;
+            border: 2px solid #35D7BB;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active, .collapsible:hover {
+            /*background-color: white;*/
+        }
+
+        .collapsible:after {
+            content: '\f103';
+            font-family: "Font Awesome 6 Free";
+            color: #35D7BB;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\f102";
+            font-family: "Font Awesome 6 Free";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            width: 70%;
+        }
+
+        .callout-one {
+            max-width: 50%;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .callout-one ul {
+            margin: 0;
+        }
+
+        .callout-one-default {
+            border: 3px solid #35D7BB;
+        }
+
+        .kek {
+            font-size: 60px;
+            color: #35D7BB
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/6683d5e28d.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h1 style="text-align: center;">Tinkoff Generation</h1>
+<h2 style="text-align: center;">Описание параллелей</h2>
+
+<h3 style="padding-top: 1.25rem">Формат занятий</h3>
+<table cellspacing="0" id="maket">
+    <tr>
+        <td id="leftcol">
+            <i class="fa-brands fa-xbox kek"></i></i>
+            <p><b style="font-size: 1.25rem">Параллель X</b><br>
+                Параллель будет ориентирована на прокаичвание навыков решения олимпиадных задач. Занятия параллели будут сочетать в себе нетематические контесты, теоретические семинары, разборы задач, точечные 
+лекции по полезным практикам, трюкам и подходам. Контесты будут в форматах РОИ (на баллы) и ICPC (много разных полезных задач). 
+Для получения зачета по результатам обучения необходимо дорешивание контестов, которые окажутся разобраны через некоторое время. 
+            </p>
+        </td>
+        <td id="spacer"></td>
+        <td id="rightcol">
+            <i class="fa-solid fa-arrow-up-right-dots kek"></i>
+            <p><b style="font-size: 1.25rem">Параллели B, B', C</b><br>
+                В начале занятия проводится лекция по алгоритмической теме, затем на оставшееся время дается тематический контест. 
+Раз в четыре занятия проводится разбор, после которого у участников остается неделя на окончательное дорешивание. Также раз в четыре недели может проводиться теоретическое тестирование учеников. 
+По итогам теста и дорешивания выставляется оценка за блок.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<h3>Параллель X</h3>
+<table cellspacing="0" id="maket">
+    <tr>
+        <td id="leftcol">
+            <i class="fa-solid fa-people-line kek"></i>
+            <p><b style="font-size: 1.25rem">Для кого?</b><br>
+            Параллель рассчитана на опытных олимпиадников уровня участников, призеров и победителей заключительного ВсОШ по информатике. 
+Необходимо отлично разбираться в алгоритмах и структурах данных параллелей B, B', C нашего кружка.</p>
+        </td>
+        <td id="spacer"></td>
+        <td id="rightcol">
+            <i class="fa-solid fa-list-check kek"></i>
+            <p style="margin: 0;"><b style="font-size: 1.25rem">Примеры тем</b></p>
+            <div style="text-align: left">
+                <i class="fa-regular fa-star-half"></i>Поиск потоков в сетях: метод Форда-Фалкерсона, алгоритмы Эдмондса-Карпа, Диница, поиск максимальных потоков минимальной стоимости.<br>
+                <i class="fa-regular fa-star-half"></i>Быстрое преобразование Фурье его друзья: умножение и деление многочленов и длинных чисел, свертка Уолша-Адамара, ...<br>
+                <i class="fa-regular fa-star-half"></i>Продвинутые строковые структуры данных: суффиксное дерево, суффиксный автомат.<br>
+                <i class="fa-regular fa-star-half"></i>Segment-tree beats, Kinetic tree и другие неочевидные применения дерева отрезков.<br>
+                <i class="fa-regular fa-star-half"></i>Продвинутые использования корневых оптимизаций.<br>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h3>Параллель B</h3>
+<table cellspacing="0" id="maket">
+    <tr>
+        <td id="leftcol">
+            <i class="fa-solid fa-people-line kek"></i>
+            <p><b style="font-size: 1.25rem">Для кого?</b><br>
+                Параллель рассчитана на учеников уровня участников, призеров и победителей регионального этапа ВсОШ. 
+Необходимо комфортно владеть языком программирования (рекомендуется C++), а также разбираться в алгоритмах и структурах данных параллели С нашего кружка. Параллель является продолжением параллели С.</p>
+        </td>
+        <td id="spacer"></td>
+        <td id="rightcol" rowspan="2">
+            <i class="fa-solid fa-list-check kek"></i>
+            <p style="margin: 0;"><b style="font-size: 1.25rem">Примеры тем</b></p>
+            <div style="text-align: left">
+                <i class="fa-regular fa-star-half"></i>Поиск минимальных остовных деревьев, система непересекающихся множеств.<br>
+                <i class="fa-regular fa-star-half"></i>DFS: поиск компонент сильной связности, вершинной и реберной двусвязностей, нахождение мостов и точек сочленения, поиск паросочетаний.<br>
+                <i class="fa-regular fa-star-half"></i>Структуры данных: дерево отрезков с отложенными операциями, декартовы деревья по явному и неявному ключам, heavy-light decomposition, centroid decomposition, дерево Фенвика, персистентные структуры данных.<br>
+                <i class="fa-regular fa-star-half"></i>SQRT-декомпозиция: на массивах и запросах, алгоритм Мо и его модификации.<br>
+                <i class="fa-regular fa-star-half"></i>Динамическое программирование: НВП за O(n log n), метод Хиршберга, ДП на подмножествах/профилю.<br>Оптимизации ДП: convex hull trick, оптимизации Кнута, “разделяй-и-властвуй”, lambda-оптимизация.<br>
+                <i class="fa-regular fa-star-half"></i>Геометрия: выпуклые оболочки, поиск касательных к многоугольникам, сумма Минковского, метод сканирующей прямой.<br>
+                <i class="fa-regular fa-star-half"></i>Строки: алгоритм Ахо-Корасик, суффиксный массив.<br>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h3>Параллель B'</h3>
+<table cellspacing="0" id="maket">
+    <tr>
+        <td id="leftcol">
+            <i class="fa-solid fa-people-line kek"></i>
+            <p><b style="font-size: 1.25rem">Для кого?</b><br>
+                Параллель является промежуточной между параллелями C и B и предназначена для тех, кто уже имеет некоторые знания в области алгоритмов 
+и опыт решения олимпиадных задач, но еще не дотягивает до уровня параллели B (уровень участников, призеров и победителей муниципального этапа ВсОШ). 
+Необходимо знать синтаксис языка программирования (рекомендуется С++) и владеть базовыми темами параллели С.</p>
+        </td>
+        <td id="spacer"></td>
+        <td id="rightcol" rowspan="2">
+            <i class="fa-solid fa-list-check kek"></i>
+            <p style="margin: 0;"><b style="font-size: 1.25rem">Примеры тем</b></p>
+            <div style="text-align: left">
+                <i class="fa-regular fa-star-half"></i>Деревья: поиск LCA.<br>
+                <i class="fa-regular fa-star-half"></i>Структуры данных: разреженные таблицы, деревья отрезков, технология отложенных операций, дерево Фенвика.<br>
+                <i class="fa-regular fa-star-half"></i>Строки: префикс-функция, z-функция, строковые хэши, бор, алгоритм Ахо-Корасик.<br>
+                <i class="fa-regular fa-star-half"></i>DFS: топологическая сортировка, поиск эйлерова пути/цикла, поиск компонент сильной связности, мостов, точек сочленения<br>
+                <i class="fa-regular fa-star-half"></i>Работа с STL C++: lower_bound/upper_bound,  ordered/unordered set/map, bitset, и методы работы с ними<br>
+                <i class="fa-regular fa-star-half"></i>Геометрия: векторы, скалярное/векторное произведение, поиск пересечения прямых/отрезков/окружностей, поиск касательных к окружностям, проверка принадлежности точки многоугольнику, выпуклые оболочки, касательные к многоугольникам, метод сканирующей прямой.<br>
+                <i class="fa-regular fa-star-half"></i>Динамическое программирование: на подотрезках, на поддеревьях, по подмножествам/профилю, поиск порядкового номера объекта (перестановки, сочетания, ПСП)/объекта по номеру, поиск НВП за O(n log n).<br>
+            </div>
+        </td>
+    </tr>
+</table>
+
+<h3>Параллель C</h3>
+<table cellspacing="0" id="maket">
+    <tr>
+        <td id="leftcol">
+            <i class="fa-solid fa-people-line kek"></i>
+            <p><b style="font-size: 1.25rem">Для кого?</b><br>
+                Параллель рассчитана на школьников, которые хорошо знакомы с языком программирования (например, Python, Java, C++), но которые имеют мало опыта в изучении алгоритмов и решении олимпиадных задач.
+(см. примерную программу ниже), и хотят познакомиться с ними поближе. 
+На занятиях преподаватели будут “разговаривать” на C++, однако вступительную можно решить, используя другие языки, а затем, в первые месяцы занятий, преподаватели всеми силами помогут освоить C++.
+Также нужно уметь решать простые задачи по математике и уметь писать большие программы на несколько десятков строк.                                                                                            
+</p>
+        </td>
+        <td id="spacer"></td>
+        <td id="rightcol" rowspan="2">
+            <i class="fa-solid fa-list-check kek"></i>
+            <p style="margin: 0;"><b style="font-size: 1.25rem">Примеры тем</b></p>
+            <div style="text-align: left">
+                <i class="fa-regular fa-star-half"></i>Бинарный поиск и его модификации.<br>
+                <i class="fa-regular fa-star-half"></i>Базовые структуры данных: стеки, очереди, деки, двоичная куча. Решение задач.<br>
+                <i class="fa-regular fa-star-half"></i>Работа с STL C++: lower_bound/upper_bound,  ordered/unordered set/map, bitset, и методы работы с ними<br>
+                <i class="fa-regular fa-star-half"></i>Линейные алгоритмы: префиксные суммы, два указателя, минимум в плавающем окне.<br>
+                <i class="fa-regular fa-star-half"></i>Графы: методы хранения графов в памяти. Обход в глубину. Поиск кратчайших путей в графе: BFS, алгоритмы Дейкстры, Флойда, Форда-Беллмана.<br>
+                <i class="fa-regular fa-star-half"></i>Динамическое программирование: одномерное, двумерное. Задачи о рюкзаке, НВП, НОП.<br>
+                <i class="fa-regular fa-star-half"></i>Генерация комбинаторных объектов. Поиск порядкового номера объекта (перестановки, сочетания, ПСП)/объекта по номеру.<br>
+                <i class="fa-regular fa-star-half"></i>Сканирующая прямая, жадные подходы в решении задач<br>
+                <i class="fa-regular fa-star-half"></i>Дерево отрезков<br> 
+               <i class="fa-regular fa-star-half"></i>Геометрия: векторы, скалярное/векторное произведение, поиск пересечения прямых/отрезков/окружностей, поиск касательных к окружностям, проверка принадлежности точки многоугольнику.<br>
+            </div>
+        </td>
+    </tr>
+</table><br><br>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>Зимний отбор в Т-Поколение</title>
+    <script src="https://acdn.tinkoff.ru/twa/v5/bundles/generic/client.js?ttm=tinkoff-pwa_algocourses" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/form_style.css">
+</head>
+
+<body>
+
+<div class="main">
+    <header>
+        <h1>Зимний отбор в Т-Поколение</h1>
+        <h2>Алгоритмы и структуры данных 
+2024-2025 учебный год</h2>
+    </header>
+
+    <div class="fields">
+        <script>
+            function onFormSubmit() {
+               const event = {
+                event: 'selectionFormSubmit'
+               };
+               window.ttm = window.ttm || [];
+               window.ttm.push(event);
+            }
+	</script>
+        <form method="post" onsubmit="onFormSubmit()">
+        <input type="hidden" name="csrfmiddlewaretoken" value="cu-crawler">
+
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="surname" name="surname" required placeholder="&nbsp;">
+                <label class="lab" for="surname">
+                    Фамилия<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="name" name="name" required placeholder="&nbsp;">
+                <label class="lab" for="name">
+                    Имя<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="fathers_name" name="fathers_name"  placeholder="&nbsp;">
+                <label class="lab" for="fathers_name">
+                    Отчество
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="date" id="date" name="date" required placeholder="&nbsp;">
+                <label class="lab" for="date">
+                    Дата рождения<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="city" name="city" required placeholder="&nbsp;">
+                <label class="lab" for="city">
+                    Город<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="grade" name="grade" required placeholder="&nbsp;">
+                <label class="lab" for="grade">
+                    Класс обучения<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="school" name="school" required placeholder="&nbsp;">
+                <label class="lab" for="school">
+                    Школа<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="text" id="telegram" name="telegram" required placeholder="&nbsp;">
+                <label class="lab" for="telegram">
+                    Логин в telegram (например @gornak40)<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="email" id="email" name="email" required placeholder="&nbsp;">
+                <label class="lab" for="email">
+                    E-Mail<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <input class="inp" type="tel" pattern="\+?[0-9\(\)\-\s]{10,}" id="phone" name="phone" required placeholder="&nbsp;">
+                <label class="lab" for="phone">
+                    Телефон<span>*</span>
+                </label>
+                <div class="bar"></div>
+                </div>
+            
+        
+            
+                <div class="group">
+                <textarea rows="3" id="expectations" name="expectations"  placeholder="&nbsp;"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="lab" for="expectations">
+                    Что вы ждете от кружка
+                </label>
+                </div>
+            
+        
+            
+                <div class="group">
+                <textarea rows="3" id="about" name="about"  placeholder="&nbsp;"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="lab" for="about">
+                    Расскажите о себе
+                </label>
+                </div>
+            
+        
+            
+                <div class="checkbox-row">
+                <input class="checkbox-row" type="checkbox" id="personal" name="personal" required>
+                <label class="checkbox-row" for="personal">
+                    Нажимая кнопку «Зарегистрироваться», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a href="https://acdn.tinkoff.ru/static/documents/4b32516b-5760-4af2-a331-7385c9394edd.pdf?_ga=2.50410665.1831564475.1629106087-1534724369.1627658059&_gac=1.120325114.1628510849.CjwKCAjwpMOIBhBAEiwAy5M6YJmZQslrslZJt2F7lbDKO82eKRQ3rZUYyAXst7C-9FcxtuldM_aunBoC0p0QAvD_BwE">Согласии на обработку персональных данных</a><span>*</span>
+                </label>
+                </div>
+            
+        
+
+        <button>Отправить</button>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
+
