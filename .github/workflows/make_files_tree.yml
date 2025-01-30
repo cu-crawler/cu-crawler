@@ -27,8 +27,11 @@ jobs:
             os: ubuntu-20.04
 
     steps:
+
       - name: Clone.
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Setup Python.
         uses: actions/setup-python@v2

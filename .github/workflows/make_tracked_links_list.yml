@@ -16,8 +16,11 @@ jobs:
     timeout-minutes: 5
 
     steps:
+
       - name: Clone.
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
 
       - name: Setup Python.
         uses: actions/setup-python@v5
