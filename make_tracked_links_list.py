@@ -287,7 +287,7 @@ async def crawl_worker(session: aiohttp.ClientSession):
                 logger.warning(f"Url {url} failed after {attempt} attempts, ignoring")
                 continue
 
-            logger.warning(f"Client or timeout error: {e}. Retrying {url} (attempt #1{attempt})")
+            logger.warning(f"Client or timeout error: {e}. Retrying {url} (attempt #{attempt})")
 
             WORKERS_TASK_QUEUE.put_nowait(url)
             if url in VISITED_LINKS:
