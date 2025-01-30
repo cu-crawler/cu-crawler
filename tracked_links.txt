@@ -46,7 +46,6 @@ apply.centraluniversity.ru/master/nornickel
 apply.centraluniversity.ru/privacy
 apply.centraluniversity.ru/visuallyimpaired
 apply.centraluniversity.ru/visuallyimpaired-ba
-apply.centraluniversity.ru/visuallyimpaired-master
 centraluniversity.ru
 centraluniversity.ru/bachelor
 centraluniversity.ru/bachelor/artificial-intelligence
