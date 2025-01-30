@@ -194,7 +194,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/partnership-schools/</loc>
-        <lastmod>2024-12-17T16:39:39.526Z</lastmod>
+        <lastmod>2025-01-30T10:01:12.352Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -663,6 +663,12 @@
     <url>
         <loc>https://education.tbank.ru/study/fintech/context/</loc>
         <lastmod>2025-01-28T09:49:33.525Z</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://education.tbank.ru/school/olymp_internship/</loc>
+        <lastmod>2025-01-30T19:03:13.814Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
