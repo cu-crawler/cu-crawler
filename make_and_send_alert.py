@@ -139,7 +139,7 @@ async def main() -> None:
         commit_hash = commit_data["sha"][:7]
         html_url = commit_data["html_url"]
 
-        alert_text = f"<b>New changes of Telegram</b>\n\n"
+        alert_text = f"<b>New changes</b>\n\n"
         alert_hashtags = set()
 
         global AVAILABLE_HASHTAGS
