@@ -6,6 +6,7 @@ import mimetypes
 import os
 import re
 from asyncio.exceptions import TimeoutError
+from collections import defaultdict
 from string import punctuation, whitespace
 from time import time
 from typing import List
@@ -48,7 +49,7 @@ SPARKLE_SE_REGEX = r";se=(.*?);"
 SPARKLE_SIG_TEMPLATE = f";sig={DYNAMIC_PART_MOCK};"
 SPARKLE_SE_TEMPLATE = f";se={DYNAMIC_PART_MOCK};"
 
-STEL_DEV_LAYER = 190
+URL_ATTEMPTS = defaultdict(int)
 
 # unsecure but so simple
 CONNECTOR = aiohttp.TCPConnector(ssl=False, force_close=True, limit=300)
@@ -60,7 +61,6 @@ HEADERS = {
     "Accept-Encoding": "gzip, deflate, br",
     "DNT": "1",
     "Connection": "keep-alive",
-    "Cookie": f"stel_ln=en; stel_dev_layer={STEL_DEV_LAYER}",
     "Upgrade-Insecure-Requests": "1",
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
@@ -168,8 +168,14 @@ async def crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
             ServerDisconnectedError,
             TimeoutError,
             ClientConnectorError,
-        ):
-            logger.warning(f"Client or timeout error. Retrying {url}")
+        ) as e:
+            URL_ATTEMPTS[url] += 1
+            attempt = URL_ATTEMPTS[url]
+            if attempt > 3:
+                logger.warning(f"Url {url} failed after {attempt} attempts, ignoring")
+                continue
+
+            logger.warning(f"Client or timeout error: {e}. Retrying {url} (attempt #{attempt})")
         else:
             break
 
@@ -177,7 +183,7 @@ async def crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
 async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
     logger.info(f"Process {url}")
     async with session.get(
-        f"{PROTOCOL}{url}", allow_redirects=False, timeout=TIMEOUT, headers=HEADERS
+        f"{PROTOCOL}{url}", allow_redirects=True, timeout=TIMEOUT, headers=HEADERS
     ) as response:
         if 499 < response.status < 600:
             msg = f"Error 5XX. Retrying {url}"
