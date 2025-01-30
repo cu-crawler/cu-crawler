@@ -195,6 +195,7 @@ education.tbank.ru/school/generation/
 education.tbank.ru/school/generation/algo/
 education.tbank.ru/school/generation/algo/form/
 education.tbank.ru/school/generation/math/
+education.tbank.ru/school/olymp_internship/
 education.tbank.ru/school/partnership-schools/
 education.tbank.ru/school/partnership/
 education.tbank.ru/school/project-activities/
