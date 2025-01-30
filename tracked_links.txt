@@ -47,7 +47,6 @@ apply.centraluniversity.ru/privacy
 apply.centraluniversity.ru/visuallyimpaired
 apply.centraluniversity.ru/visuallyimpaired-ba
 apply.centraluniversity.ru/visuallyimpaired-master
-centraluniversity.notion.site/622fecf82ea44f3281a54ac26ff41429
 centraluniversity.ru
 centraluniversity.ru/bachelor
 centraluniversity.ru/bachelor/artificial-intelligence
@@ -64,13 +63,11 @@ centraluniversity.ru/courses
 centraluniversity.ru/courses/cv
 centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
-centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
-centraluniversity.ru/hotel/cloud
 centraluniversity.ru/hotel/cosmos
 centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
@@ -86,12 +83,6 @@ centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
 centraluniversity.ru/university-meeting
 centraluniversity.ru/visuallyimpaired-main
-centraluniversity.yonote.ru/favicon.ico
-centraluniversity.yonote.ru/opensearch.xml
-centraluniversity.yonote.ru/search
-centraluniversity.yonote.ru/share/01c6e64f-e9e2-418b-a481-8f8bcf1627a3
-centraluniversity.yonote.ru/share/a405d5e3-2b75-4f60-8d8b-2a209e3465b8
-centraluniversity.yonote.ru/static/manifest.webmanifest
 education.tbank.ru
 education.tbank.ru/academy/
 education.tbank.ru/academy/algorithms_tomsk/
@@ -350,6 +341,10 @@ event.centraluniversity.ru/reshis/result-2024
 event.centraluniversity.ru/seeyoufest2024
 event.centraluniversity.ru/turnir-reshis
 event.centraluniversity.ru/visuallyimpaired-events
+id.centraluniversity.ru/
+id.centraluniversity.ru/resources/29pg8/login/cu_theme/main.js
+id.centraluniversity.ru/resources/29pg8/login/cu_theme/polyfills.js
+id.centraluniversity.ru/resources/29pg8/login/cu_theme/styles.css
 legal.centraluniversity.ru
 legal.centraluniversity.ru/additionalinformation
 legal.centraluniversity.ru/apply
@@ -366,9 +361,7 @@ legal.centraluniversity.ru/education/programm/work
 legal.centraluniversity.ru/edustandarts
 legal.centraluniversity.ru/employees
 legal.centraluniversity.ru/grants
-legal.centraluniversity.ru/inter
 legal.centraluniversity.ru/meal
-legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/ovz
 legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
