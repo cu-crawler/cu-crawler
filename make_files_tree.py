@@ -36,8 +36,10 @@ TON_RATE_REGEX = r'"tonRate":"[.0-9]+"'
 TON_RATE_TEMPLATE = f'"tonRate":"{DYNAMIC_PART_MOCK}"'
 PASSPORT_SSID_REGEX = r"passport_ssid=[a-z0-9]+_[a-z0-9]+_[a-z0-9]+"
 PASSPORT_SSID_TEMPLATE = f"passport_ssid={DYNAMIC_PART_MOCK}"
-NONCE_REGEX = r'"nonce":"[a-z0-9]+_[a-z0-9]+_[a-z0-9]+'
-NONCE_TEMPLATE = f'"nonce":"{DYNAMIC_PART_MOCK}'
+NONCE_REGEX = r'nonce="[a-z0-9]+"'
+NONCE_TEMPLATE = f'nonce="{DYNAMIC_PART_MOCK}"'
+CSRF_TOKEN_REGEX = r'name="csrfmiddlewaretoken" value="\w+"'
+CSRF_TOKEN_TEMPLATE = f'name="csrfmiddlewaretoken" value="{DYNAMIC_PART_MOCK}"'
 PROXY_CONFIG_SUB_NET_REGEX = r"\d+\.\d+:8888;"
 PROXY_CONFIG_SUB_NET_TEMPLATE = "X.X:8888;"
 TRANSLATE_SUGGESTION_REGEX = r'<div class="tr-value-suggestion">(.?)+</div>'
@@ -247,6 +249,7 @@ async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
         content = re.sub(SPARKLE_SIG_REGEX, SPARKLE_SIG_TEMPLATE, content)
         content = re.sub(SPARKLE_SE_REGEX, SPARKLE_SE_TEMPLATE, content)
         content = re.sub(TON_RATE_REGEX, TON_RATE_TEMPLATE, content)
+        content = re.sub(CSRF_TOKEN_REGEX, CSRF_TOKEN_TEMPLATE, content)
 
         # there is a problem with the files with the same name (in the same path) but different case
         # the content is random because of the async
