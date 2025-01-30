@@ -4,6 +4,7 @@ import os
 import re
 from asyncio import Queue
 from asyncio.exceptions import TimeoutError
+from collections import defaultdict
 from functools import cache
 from html import unescape
 from time import time
@@ -102,7 +103,7 @@ HEADERS = {
 }
 
 logging.basicConfig(
-    format="%(asctime)s  %(levelname)s - %(message)s", level=logging.DEBUG
+    format="%(asctime)s  %(levelname)s - %(message)s", level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
@@ -112,6 +113,7 @@ LINKS_TO_TRACKABLE_RESOURCES = set()
 
 WORKERS_COUNT = 30
 WORKERS_TASK_QUEUE = Queue()
+URL_ATTEMPTS = defaultdict(int)
 
 
 @cache
@@ -279,7 +281,13 @@ async def crawl_worker(session: aiohttp.ClientSession):
             TimeoutError,
             ClientConnectorError,
         ) as e:
-            logger.warning(f"Client or timeout error: {e}. Retrying {url}")
+            URL_ATTEMPTS[url] += 1
+            attempt = URL_ATTEMPTS[url]
+            if attempt > 3:
+                logger.warning(f"Url {url} failed after {attempt} attempts, ignoring")
+                continue
+
+            logger.warning(f"Client or timeout error: {e.__type__.__name__}: {e}. Retrying {url} (attempt #1{attempt})")
 
             WORKERS_TASK_QUEUE.put_nowait(url)
             if url in VISITED_LINKS:

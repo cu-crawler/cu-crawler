@@ -3,7 +3,7 @@ name: Generate or update list of tracked links
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 */2 * * *'
   push:
     # trigger on updated link crawler rules
     branches:

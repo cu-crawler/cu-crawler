@@ -3,7 +3,7 @@ name: Fetch new content of tracked links and files
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 */2 * * *'
   push:
     # trigger on updated linkbase
     branches:
