@@ -364,6 +364,7 @@ legal.centraluniversity.ru/edustandarts
 legal.centraluniversity.ru/employees
 legal.centraluniversity.ru/grants
 legal.centraluniversity.ru/inter
+legal.centraluniversity.ru/meal
 legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/ovz
 legal.centraluniversity.ru/paidedu
