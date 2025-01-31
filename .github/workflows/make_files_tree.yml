@@ -3,7 +3,7 @@ name: Fetch new content of tracked links and files
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */6 * * *'
   push:
     # trigger on updated linkbase
     branches:
@@ -12,19 +12,9 @@ on:
 jobs:
   fetch_new_content:
     name: Make files tree
-    runs-on: ${{matrix.os}}
+    runs-on: macos-13
     continue-on-error: true
     timeout-minutes: 10
-
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - mode: web
-            os: macos-13
-
-          - mode: web_res
-            os: ubuntu-20.04
 
     steps:
 
@@ -45,30 +35,16 @@ jobs:
       - name: Generate files tree.
         env:
           OUTPUT_FOLDER: "data_ci/"
-          MODE: ${{ matrix.mode }}
+          MODE: all
         run: |
           git pull
           python make_files_tree.py
           rm -rf __pycache__
 
       - name: Prepare data.
-        if: matrix.mode == 'web'
         run: |
           git checkout data
           git pull
-
-          mv data/web_res data_ci/web_res
-
-          rm -rf data
-          mv data_ci data
-
-      - name: Prepare data.
-        if: matrix.mode == 'web_res'
-        run: |
-          git checkout data
-          git pull
-
-          mv data/web data_ci/web
 
           rm -rf data
           mv data_ci data
