@@ -48,14 +48,17 @@ SPARKLE_SIG_REGEX = r";sig=(.*?);"
 SPARKLE_SE_REGEX = r";se=(.*?);"
 SPARKLE_SIG_TEMPLATE = f";sig={DYNAMIC_PART_MOCK};"
 SPARKLE_SE_TEMPLATE = f";se={DYNAMIC_PART_MOCK};"
-
+SESSION_CODE_REGEX = r"session_code=\w+&amp;"
+SESSION_CODE_TEMPLATE = f"session_code={DYNAMIC_PART_MOCK}&amp;"
+TAB_ID_REGEX = r"tab_id=\w{11}"
+TAB_ID_TEMPLATE = f"tab_id={DYNAMIC_PART_MOCK}"
 URL_ATTEMPTS = defaultdict(int)
 
 # unsecure but so simple
 CONNECTOR = aiohttp.TCPConnector(ssl=False, force_close=True, limit=300)
 TIMEOUT = aiohttp.ClientTimeout(total=10)
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:99.0) Gecko/20100101 Firefox/99.0",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.5",
     "Accept-Encoding": "gzip, deflate, br",
@@ -256,6 +259,8 @@ async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
         content = re.sub(SPARKLE_SE_REGEX, SPARKLE_SE_TEMPLATE, content)
         content = re.sub(TON_RATE_REGEX, TON_RATE_TEMPLATE, content)
         content = re.sub(CSRF_TOKEN_REGEX, CSRF_TOKEN_TEMPLATE, content)
+        content = re.sub(SESSION_CODE_REGEX, SESSION_CODE_TEMPLATE, content)
+        content = re.sub(TAB_ID_REGEX, TAB_ID_TEMPLATE, content)
 
         # there is a problem with the files with the same name (in the same path) but different case
         # the content is random because of the async

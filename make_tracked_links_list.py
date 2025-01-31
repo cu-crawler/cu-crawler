@@ -18,6 +18,7 @@ from aiohttp import ClientConnectorError, ServerDisconnectedError
 PROTOCOL = "https://"
 URLS = {
     "centraluniversity.ru",
+    "centraluniversity.ru/sitemap.xml",
     "education.tbank.ru",
     "education.tbank.ru/sitemap.xml",
     "algocourses.ru",
