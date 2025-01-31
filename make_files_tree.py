@@ -33,16 +33,12 @@ OUTPUT_RESOURCES_FOLDER = os.path.join(
 PAGE_GENERATION_TIME_REGEX = r"<!-- page generated in .+ -->"
 PAGE_API_HASH_REGEX = r"\?hash=[a-z0-9]+"
 PAGE_API_HASH_TEMPLATE = f"?hash={DYNAMIC_PART_MOCK}"
-TON_RATE_REGEX = r'"tonRate":"[.0-9]+"'
-TON_RATE_TEMPLATE = f'"tonRate":"{DYNAMIC_PART_MOCK}"'
 PASSPORT_SSID_REGEX = r"passport_ssid=[a-z0-9]+_[a-z0-9]+_[a-z0-9]+"
 PASSPORT_SSID_TEMPLATE = f"passport_ssid={DYNAMIC_PART_MOCK}"
 NONCE_REGEX = r'nonce="[a-z0-9]+"'
 NONCE_TEMPLATE = f'nonce="{DYNAMIC_PART_MOCK}"'
 CSRF_TOKEN_REGEX = r'name="csrfmiddlewaretoken" value="\w+"'
 CSRF_TOKEN_TEMPLATE = f'name="csrfmiddlewaretoken" value="{DYNAMIC_PART_MOCK}"'
-PROXY_CONFIG_SUB_NET_REGEX = r"\d+\.\d+:8888;"
-PROXY_CONFIG_SUB_NET_TEMPLATE = "X.X:8888;"
 TRANSLATE_SUGGESTION_REGEX = r'<div class="tr-value-suggestion">(.?)+</div>'
 SPARKLE_SIG_REGEX = r";sig=(.*?);"
 SPARKLE_SE_REGEX = r";se=(.*?);"
@@ -58,6 +54,11 @@ SCRIPT_REGEX = r"<script>.*?</script>"
 SCRIPT_TEMPLATE = r"<!-- script tag removed -->"
 SCRIPT_JSON_REGEX = r'<script id="\w+" type="application/json">.*?</script>'
 SCRIPT_JSON_TEMPLATE = r"<!-- script tag with json removed -->"
+ID_ATTR_REGEX = r'id="\w{10}"'
+ID_ATTR_TEMPLATE = f'id="{DYNAMIC_PART_MOCK}"'
+ARIA_LABELLED_BY_REGEX = r'aria-labelledby="\w{10}"'
+ARIA_LABELLED_BY_TEMPLATE = f'aria-labelledby="{DYNAMIC_PART_MOCK}"'
+
 
 URL_ATTEMPTS = defaultdict(int)
 
@@ -259,18 +260,16 @@ async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
         content = re.sub(PAGE_API_HASH_REGEX, PAGE_API_HASH_TEMPLATE, content)
         content = re.sub(PASSPORT_SSID_REGEX, PASSPORT_SSID_TEMPLATE, content)
         content = re.sub(NONCE_REGEX, NONCE_TEMPLATE, content)
-        content = re.sub(
-            PROXY_CONFIG_SUB_NET_REGEX, PROXY_CONFIG_SUB_NET_TEMPLATE, content
-        )
         content = re.sub(SPARKLE_SIG_REGEX, SPARKLE_SIG_TEMPLATE, content)
         content = re.sub(SPARKLE_SE_REGEX, SPARKLE_SE_TEMPLATE, content)
-        content = re.sub(TON_RATE_REGEX, TON_RATE_TEMPLATE, content)
         content = re.sub(CSRF_TOKEN_REGEX, CSRF_TOKEN_TEMPLATE, content)
         content = re.sub(SESSION_CODE_REGEX, SESSION_CODE_TEMPLATE, content)
         content = re.sub(TAB_ID_REGEX, TAB_ID_TEMPLATE, content)
         content = re.sub(EXECUTION_REGEX, EXECUTION_TEMPLATE, content)
         content = re.sub(SCRIPT_REGEX, SCRIPT_TEMPLATE, content)
         content = re.sub(SCRIPT_JSON_REGEX, SCRIPT_JSON_TEMPLATE, content)
+        content = re.sub(ID_ATTR_REGEX, ID_ATTR_TEMPLATE, content)
+        content = re.sub(ARIA_LABELLED_BY_REGEX, ARIA_LABELLED_BY_TEMPLATE, content)
 
         # there is a problem with the files with the same name (in the same path) but different case
         # the content is random because of the async
