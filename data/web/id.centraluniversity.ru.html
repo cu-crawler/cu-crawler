@@ -49,12 +49,12 @@
     window.authConfiguration = {
       urls: {
         baseHref: "/resources/29pg8/login/cu_theme",
-        ssoLoginInOtherTabsUrl: window.location.origin + "/realms/central-university/login-actions/restart?client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA&amp;skip_logout=true",
-        loginRestartFlowUrl: window.location.origin + "/realms/central-university/login-actions/restart?client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA&amp;skip_logout=false",
-        loginResetCredentialsUrl: window.location.origin + "/realms/central-university/login-actions/reset-credentials?client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA",
-        registrationAction: "https://id.centraluniversity.ru/realms/central-university/login-actions/authenticate?session_code=-RPEATWDg2ApZtMyxwD3Z54QlxTlavZz3RnK5CZJURg&amp;execution=cu-crawler&amp;client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA",
-        registrationUrl: window.location.origin + "/realms/central-university/login-actions/registration?client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA",
-        loginUrl: window.location.origin + "/realms/central-university/login-actions/authenticate?client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA",
+        ssoLoginInOtherTabsUrl: window.location.origin + "/realms/central-university/login-actions/restart?client_id=api-gateway&amp;tab_id=cu-crawler&amp;skip_logout=true",
+        loginRestartFlowUrl: window.location.origin + "/realms/central-university/login-actions/restart?client_id=api-gateway&amp;tab_id=cu-crawler&amp;skip_logout=false",
+        loginResetCredentialsUrl: window.location.origin + "/realms/central-university/login-actions/reset-credentials?client_id=api-gateway&amp;tab_id=cu-crawler",
+        registrationAction: "https://id.centraluniversity.ru/realms/central-university/login-actions/authenticate?session_code=cu-crawler&amp;execution=cu-crawler&amp;client_id=api-gateway&amp;tab_id=cu-crawler",
+        registrationUrl: window.location.origin + "/realms/central-university/login-actions/registration?client_id=api-gateway&amp;tab_id=cu-crawler",
+        loginUrl: window.location.origin + "/realms/central-university/login-actions/authenticate?client_id=api-gateway&amp;tab_id=cu-crawler",
       
       },
       realm: {},
@@ -114,7 +114,7 @@
       window.authConfiguration.realm.resetPasswordAllowed = true;
     </script>
     <script>
-      window.authConfiguration.urls.loginAction = "https://id.centraluniversity.ru/realms/central-university/login-actions/authenticate?session_code=-RPEATWDg2ApZtMyxwD3Z54QlxTlavZz3RnK5CZJURg&amp;execution=cu-crawler&amp;client_id=api-gateway&amp;tab_id=ZFJC-GbxZcA";
+      window.authConfiguration.urls.loginAction = "https://id.centraluniversity.ru/realms/central-university/login-actions/authenticate?session_code=cu-crawler&amp;execution=cu-crawler&amp;client_id=api-gateway&amp;tab_id=cu-crawler";
     </script>
 </body>
 </html>
