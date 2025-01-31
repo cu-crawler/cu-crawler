@@ -55,6 +55,9 @@ TAB_ID_TEMPLATE = f"tab_id={DYNAMIC_PART_MOCK}"
 EXECUTION_REGEX = r"execution=[a-f0-9\-]+&amp;"
 EXECUTION_TEMPLATE = f"execution={DYNAMIC_PART_MOCK}&amp;"
 SCRIPT_REGEX = r"<script>.*?</script>"
+SCRIPT_TEMPLATE = r"<!-- script tag removed -->"
+SCRIPT_JSON_REGEX = r'<script id="\w+" type="application/json">.*?</script>'
+SCRIPT_JSON_TEMPLATE = r"<!-- script tag with json removed -->"
 
 URL_ATTEMPTS = defaultdict(int)
 
@@ -266,7 +269,8 @@ async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
         content = re.sub(SESSION_CODE_REGEX, SESSION_CODE_TEMPLATE, content)
         content = re.sub(TAB_ID_REGEX, TAB_ID_TEMPLATE, content)
         content = re.sub(EXECUTION_REGEX, EXECUTION_TEMPLATE, content)
-        content = re.sub(SCRIPT_REGEX, "", content)
+        content = re.sub(SCRIPT_REGEX, SCRIPT_TEMPLATE, content)
+        content = re.sub(SCRIPT_JSON_REGEX, SCRIPT_JSON_TEMPLATE, content)
 
         # there is a problem with the files with the same name (in the same path) but different case
         # the content is random because of the async
