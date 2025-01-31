@@ -55,6 +55,7 @@ centraluniversity.ru/bachelor/business-informatics
 centraluniversity.ru/bachelor/development
 centraluniversity.ru/bachelor/drip
 centraluniversity.ru/bachelor/hse
+centraluniversity.ru/bachelor/mfti
 centraluniversity.ru/bachelor/perevod
 centraluniversity.ru/bachelor/scholarship
 centraluniversity.ru/campus
