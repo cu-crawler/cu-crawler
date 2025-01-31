@@ -41,6 +41,7 @@ algocourses.ru/winter2024
 algocourses.ru/x2024/
 apply.centraluniversity.ru
 apply.centraluniversity.ru/custom.css
+apply.centraluniversity.ru/cybersec
 apply.centraluniversity.ru/master
 apply.centraluniversity.ru/master/nornickel
 apply.centraluniversity.ru/privacy
@@ -86,6 +87,7 @@ centraluniversity.ru/sitemap.xml
 centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
+centraluniversity.ru/university-meeting
 centraluniversity.ru/visuallyimpaired-main
 education.tbank.ru
 education.tbank.ru/academy/
@@ -338,10 +340,12 @@ event.centraluniversity.ru/dod1707
 event.centraluniversity.ru/dod1802
 event.centraluniversity.ru/dod2002
 event.centraluniversity.ru/exam
+event.centraluniversity.ru/megadod
 event.centraluniversity.ru/open-day-0312/
 event.centraluniversity.ru/partner_release
 event.centraluniversity.ru/reshis
 event.centraluniversity.ru/reshis/result-2024
+event.centraluniversity.ru/seeyoufest2024
 event.centraluniversity.ru/turnir-reshis
 event.centraluniversity.ru/visuallyimpaired-events
 id.centraluniversity.ru/
