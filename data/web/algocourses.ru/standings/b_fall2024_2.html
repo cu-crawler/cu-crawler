@@ -4,41 +4,29 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Параллель B 2024 (I-II)</title>
+    <title>Параллель B 2024 (III-IV)</title>
     <script src="https://www.cdn-tinkoff.ru/twa/v5/bundles/generic/client.js?ttm=tinkoff-pwa_algocourses" type="text/javascript" defer></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/standings.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
     <script>
-        var standings_label = "b_fall2024";
+        var standings_label = "b_fall2024_2";
         var contest_id = -1;
         var is_olymp = false;
         var is_blitz = false;
-        var enable_marks = true;
+        var enable_marks = false;
     </script>
     <script src="/static/standings.js"></script>
     
     <script>
         var newCalculateContestMark = function(
-	total_scores,       // двумерный массив пар балла и времени сдачи задач пользователями
-	user_id,            // номер пользователя
-	contest_info        // информация о контесте
-){
-	let tot = useOldContestMark(total_scores, user_id);
-	if (contest_info['is_math']) {
-		return -(tot / mathNeed);
-	}
-	return (tot >= contest_info['otsechka'] ? tot / contest_info['otsechka'] : 0);
+    total_scores,       // двумерный массив пар балла и времени сдачи задач пользователями
+    user_id,            // номер пользователя
+    contest_info        // информация о контесте
+) {
+    return useOldContestMark(total_scores, user_id)
 };
-        var calculateBonus = function(users, contests) {
-    for (let i = 0; i < users.length; i++) {
-        if (users[i].name.endsWith('💎')) {
-            users[i].mark += 1 / scoreNeed;
-        }
-    }
-};
-
-var calculateTotalMark = function(
+        var calculateTotalMark = function(
 	marks,              // массив оценок за контесты
 	coefficients,        //  массив коэффициентов контесто
 	total_score,        // суммарный балл за все контесты
@@ -49,39 +37,11 @@ var calculateTotalMark = function(
 	total_users,        // общее количество участников
 	problem_accepted    // двумерный массив количества ОК по задаче
 ){
-	let sum = 0;
-	let msum = 0; // math
-	marks.forEach((mark) => {
-		if (mark >= 0) {
-			sum += mark;
-		} else {
-			msum -= mark;
-		}
-	});
-	sum += (msum >= 1 ? msum : 0);
-	return (sum / scoreNeed);
+	return defaultTotalMark(marks, coefficients);
 };
-        const mathNeed = 8;
-const scoreNeed = 12;
-
-var getMarkColor = function(mark) {
-	if (mark > 1) {
-		return 'cadetblue';
-	} else if (mark == 1) {
-		return 'lightgreen';
-	} else if (mark > 0) {
-		return 'yellow';
-	} else if (mark == 0) {
-		return 'lightcoral';
-	}
-	return 'khaki';
-};
-
-var defaultContestMark = function(total_score, problem_score) {
-	return total_score;
-};
+        
     </script>
-    <base href="/standings/b_fall2024/" />
+    <base href="/standings/b_fall2024_2/" />
     
 </head>
 
