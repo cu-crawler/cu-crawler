@@ -40,6 +40,7 @@ algocourses.ru/toi2024
 algocourses.ru/winter2024
 algocourses.ru/x2024/
 apply.centraluniversity.ru
+apply.centraluniversity.ru/custom.css
 apply.centraluniversity.ru/cybersec
 apply.centraluniversity.ru/master
 apply.centraluniversity.ru/master/nornickel
@@ -54,7 +55,6 @@ centraluniversity.ru/bachelor/business-informatics
 centraluniversity.ru/bachelor/development
 centraluniversity.ru/bachelor/drip
 centraluniversity.ru/bachelor/hse
-centraluniversity.ru/bachelor/mfti
 centraluniversity.ru/bachelor/perevod
 centraluniversity.ru/bachelor/scholarship
 centraluniversity.ru/campus
@@ -67,6 +67,7 @@ centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
+centraluniversity.ru/esb
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
 centraluniversity.ru/hotel/cloud
@@ -75,10 +76,13 @@ centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
+centraluniversity.ru/nostressevent
+centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
 centraluniversity.ru/setting
+centraluniversity.ru/sitemap.xml
 centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
@@ -323,7 +327,6 @@ event.centraluniversity.ru
 event.centraluniversity.ru/career
 event.centraluniversity.ru/casecontest
 event.centraluniversity.ru/cgk2024
-event.centraluniversity.ru/contest
 event.centraluniversity.ru/dataton
 event.centraluniversity.ru/dod0103
 event.centraluniversity.ru/dod0202
@@ -338,6 +341,7 @@ event.centraluniversity.ru/exam
 event.centraluniversity.ru/megadod
 event.centraluniversity.ru/open-day-0312/
 event.centraluniversity.ru/partner_release
+event.centraluniversity.ru/reshis
 event.centraluniversity.ru/reshis/result-2024
 event.centraluniversity.ru/seeyoufest2024
 event.centraluniversity.ru/turnir-reshis
