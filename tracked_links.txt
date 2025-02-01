@@ -61,7 +61,6 @@ centraluniversity.ru/bachelor/scholarship
 centraluniversity.ru/campus
 centraluniversity.ru/contacts
 centraluniversity.ru/courses
-centraluniversity.ru/courses/cv
 centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
 centraluniversity.ru/courses/recsys
@@ -77,14 +76,12 @@ centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
-centraluniversity.ru/nostressevent
 centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
 centraluniversity.ru/setting
 centraluniversity.ru/sitemap.xml
-centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
 centraluniversity.ru/university-meeting
@@ -334,9 +331,7 @@ event.centraluniversity.ru/dod0103
 event.centraluniversity.ru/dod0202
 event.centraluniversity.ru/dod0602
 event.centraluniversity.ru/dod0812
-event.centraluniversity.ru/dod1204
 event.centraluniversity.ru/dod1302
-event.centraluniversity.ru/dod1707
 event.centraluniversity.ru/dod1802
 event.centraluniversity.ru/dod2002
 event.centraluniversity.ru/exam
@@ -376,8 +371,6 @@ legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
 legal.centraluniversity.ru/struct/academsovet
 legal.centraluniversity.ru/struct/rector
-legal.centraluniversity.ru/struct/sobr
-legal.centraluniversity.ru/struct/trustees
 legal.centraluniversity.ru/vacant
 my.centraluniversity.ru/element-registration-form
 omutai.centraluniversity.ru
