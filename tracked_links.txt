@@ -41,10 +41,12 @@ algocourses.ru/winter2024
 algocourses.ru/x2024/
 apply.centraluniversity.ru
 apply.centraluniversity.ru/custom.css
+apply.centraluniversity.ru/cybersec
 apply.centraluniversity.ru/master
 apply.centraluniversity.ru/master/nornickel
 apply.centraluniversity.ru/privacy
 apply.centraluniversity.ru/visuallyimpaired
+apply.centraluniversity.ru/visuallyimpaired-ba
 apply.centraluniversity.ru/visuallyimpaired-master
 centraluniversity.ru
 centraluniversity.ru/bachelor
@@ -57,6 +59,7 @@ centraluniversity.ru/bachelor/mfti
 centraluniversity.ru/bachelor/perevod
 centraluniversity.ru/bachelor/scholarship
 centraluniversity.ru/campus
+centraluniversity.ru/contacts
 centraluniversity.ru/courses
 centraluniversity.ru/courses/cv
 centraluniversity.ru/courses/forecasting
@@ -65,6 +68,7 @@ centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
+centraluniversity.ru/esb
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
 centraluniversity.ru/hotel/cloud
@@ -73,10 +77,14 @@ centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
+centraluniversity.ru/nostressevent
+centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
 centraluniversity.ru/setting
+centraluniversity.ru/sitemap.xml
+centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
 centraluniversity.ru/university-meeting
@@ -319,6 +327,7 @@ ejstand.algocourses.ru/sbornik25/standings.html
 event.centraluniversity.ru
 event.centraluniversity.ru/career
 event.centraluniversity.ru/casecontest
+event.centraluniversity.ru/cgk2024
 event.centraluniversity.ru/contest
 event.centraluniversity.ru/dataton
 event.centraluniversity.ru/dod0103
@@ -327,6 +336,9 @@ event.centraluniversity.ru/dod0602
 event.centraluniversity.ru/dod0812
 event.centraluniversity.ru/dod1204
 event.centraluniversity.ru/dod1302
+event.centraluniversity.ru/dod1707
+event.centraluniversity.ru/dod1802
+event.centraluniversity.ru/dod2002
 event.centraluniversity.ru/exam
 event.centraluniversity.ru/megadod
 event.centraluniversity.ru/open-day-0312/
@@ -349,7 +361,9 @@ legal.centraluniversity.ru/document
 legal.centraluniversity.ru/eduStandarts
 legal.centraluniversity.ru/education
 legal.centraluniversity.ru/education/programm
+legal.centraluniversity.ru/education/programm/inform
 legal.centraluniversity.ru/education/programm/math
+legal.centraluniversity.ru/education/programm/math-2
 legal.centraluniversity.ru/education/programm/work
 legal.centraluniversity.ru/edustandarts
 legal.centraluniversity.ru/employees
