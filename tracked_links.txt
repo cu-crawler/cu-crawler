@@ -73,7 +73,6 @@ centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
 centraluniversity.ru/hotel/cloud
 centraluniversity.ru/hotel/cosmos
-centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
@@ -84,7 +83,6 @@ centraluniversity.ru/price
 centraluniversity.ru/rewardparty
 centraluniversity.ru/setting
 centraluniversity.ru/sitemap.xml
-centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
 centraluniversity.ru/university-meeting
@@ -336,14 +334,12 @@ event.centraluniversity.ru/dod0602
 event.centraluniversity.ru/dod0812
 event.centraluniversity.ru/dod1204
 event.centraluniversity.ru/dod1302
-event.centraluniversity.ru/dod1707
 event.centraluniversity.ru/dod1802
 event.centraluniversity.ru/dod2002
 event.centraluniversity.ru/exam
 event.centraluniversity.ru/megadod
 event.centraluniversity.ru/open-day-0312/
 event.centraluniversity.ru/partner_release
-event.centraluniversity.ru/reshis
 event.centraluniversity.ru/reshis/result-2024
 event.centraluniversity.ru/seeyoufest2024
 event.centraluniversity.ru/turnir-reshis
@@ -353,7 +349,6 @@ id.centraluniversity.ru/resources/29pg8/login/cu_theme/main.js
 id.centraluniversity.ru/resources/29pg8/login/cu_theme/polyfills.js
 id.centraluniversity.ru/resources/29pg8/login/cu_theme/styles.css
 legal.centraluniversity.ru
-legal.centraluniversity.ru/additionalinformation
 legal.centraluniversity.ru/apply
 legal.centraluniversity.ru/budget
 legal.centraluniversity.ru/common
@@ -381,7 +376,6 @@ legal.centraluniversity.ru/struct/trustees
 legal.centraluniversity.ru/vacant
 my.centraluniversity.ru/element-registration-form
 omutai.centraluniversity.ru
-omutai.centraluniversity.ru/datalab
 omutai.centraluniversity.ru/works
 prodcontest.ru
 prodcontest.ru/hackathon/
