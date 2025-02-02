@@ -44,7 +44,6 @@ apply.centraluniversity.ru/custom.css
 apply.centraluniversity.ru/cybersec
 apply.centraluniversity.ru/master
 apply.centraluniversity.ru/master/nornickel
-apply.centraluniversity.ru/privacy
 apply.centraluniversity.ru/visuallyimpaired
 apply.centraluniversity.ru/visuallyimpaired-ba
 apply.centraluniversity.ru/visuallyimpaired-master
@@ -75,16 +74,13 @@ centraluniversity.ru/hotel/cloud
 centraluniversity.ru/hotel/cosmos
 centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
-centraluniversity.ru/news
 centraluniversity.ru/nostress
 centraluniversity.ru/nostressevent
 centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
-centraluniversity.ru/setting
 centraluniversity.ru/sitemap.xml
-centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
 centraluniversity.ru/university-meeting
@@ -336,7 +332,6 @@ event.centraluniversity.ru/dod0602
 event.centraluniversity.ru/dod0812
 event.centraluniversity.ru/dod1204
 event.centraluniversity.ru/dod1302
-event.centraluniversity.ru/dod1707
 event.centraluniversity.ru/dod1802
 event.centraluniversity.ru/dod2002
 event.centraluniversity.ru/exam
@@ -371,7 +366,6 @@ legal.centraluniversity.ru/grants
 legal.centraluniversity.ru/inter
 legal.centraluniversity.ru/meal
 legal.centraluniversity.ru/objects
-legal.centraluniversity.ru/ovz
 legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
 legal.centraluniversity.ru/struct/academsovet
