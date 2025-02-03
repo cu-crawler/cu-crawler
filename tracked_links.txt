@@ -187,6 +187,7 @@ education.tbank.ru/school/events/algo-duel/
 education.tbank.ru/school/events/math_quiz/
 education.tbank.ru/school/events/openday/
 education.tbank.ru/school/events/physics/
+education.tbank.ru/school/events/regata-physics/
 education.tbank.ru/school/events/sbory-math-region/
 education.tbank.ru/school/events/sbory_inf/
 education.tbank.ru/school/events/sbory_math/
