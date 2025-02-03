@@ -344,7 +344,6 @@ event.centraluniversity.ru/megadod
 event.centraluniversity.ru/open-day-0312/
 event.centraluniversity.ru/partner_release
 event.centraluniversity.ru/reshis
-event.centraluniversity.ru/reshis/result-2024
 event.centraluniversity.ru/seeyoufest2024
 event.centraluniversity.ru/turnir-reshis
 event.centraluniversity.ru/visuallyimpaired-events
