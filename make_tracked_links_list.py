@@ -307,17 +307,14 @@ async def _crawl(url: str, session: aiohttp.ClientSession):
         ) as response:
             content_type = response.headers.get("content-type")
 
-            if 499 < response.status < 600:
+            if 400 <= response.status < 600:
                 VISITED_LINKS.remove(url)
-                logger.warning(f"Error 5XX. Retrying {url}")
-                raise ServerSideError(f"{response.status} code")
+                logger.warning(f"Retrying {url} because status code == {response.status}")
+                raise ServerSideError(f"Code {response.status}")
 
             if response.status not in {200, 304}:
-                if response.status != 302:
-                    content = await response.text(encoding="UTF-8")
-                    logger.warning(
-                        f"Skip {url} because status code == {response.status}. Content: {content}"
-                    )
+                content = await response.text(encoding="UTF-8")
+                logger.info(f"Skipped {url} because status code == {response.status}. Content: {content}")
                 return
 
             if is_textable_content_type(content_type):

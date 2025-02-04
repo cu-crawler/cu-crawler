@@ -46,17 +46,17 @@ SPARKLE_SIG_TEMPLATE = f";sig={DYNAMIC_PART_MOCK};"
 SPARKLE_SE_TEMPLATE = f";se={DYNAMIC_PART_MOCK};"
 SESSION_CODE_REGEX = r"session_code=[\w\-]{43}&amp;"
 SESSION_CODE_TEMPLATE = f"session_code={DYNAMIC_PART_MOCK}&amp;"
-TAB_ID_REGEX = r"tab_id=\w{11}"
+TAB_ID_REGEX = r"tab_id=[\w\-]{11}"
 TAB_ID_TEMPLATE = f"tab_id={DYNAMIC_PART_MOCK}"
 EXECUTION_REGEX = r"execution=[a-f0-9\-]+&amp;"
 EXECUTION_TEMPLATE = f"execution={DYNAMIC_PART_MOCK}&amp;"
 SCRIPT_REGEX = r"<script>.*?</script>"
 SCRIPT_TEMPLATE = r"<!-- script tag removed -->"
-SCRIPT_JSON_REGEX = r'<script id="\w+" type="application/json">.*?</script>'
+SCRIPT_JSON_REGEX = r'<script id="[\w\-]+" type="application/json">.*?</script>'
 SCRIPT_JSON_TEMPLATE = r"<!-- script tag with json removed -->"
-ID_ATTR_REGEX = r'id="\w{10}"'
+ID_ATTR_REGEX = r'id="[\w\-]{10}"'
 ID_ATTR_TEMPLATE = f'id="{DYNAMIC_PART_MOCK}"'
-ARIA_LABELLED_BY_REGEX = r'aria-labelledby="\w{10}"'
+ARIA_LABELLED_BY_REGEX = r'aria-labelledby="[\w\-]{10}"'
 ARIA_LABELLED_BY_TEMPLATE = f'aria-labelledby="{DYNAMIC_PART_MOCK}"'
 
 
@@ -196,17 +196,16 @@ async def _crawl(url: str, session: aiohttp.ClientSession, output_dir: str):
     async with session.get(
         f"{PROTOCOL}{url}", allow_redirects=True, timeout=TIMEOUT, headers=HEADERS
     ) as response:
-        if 499 < response.status < 600:
-            msg = f"Error 5XX. Retrying {url}"
-            logger.warning(msg)
-            raise RetryError(msg)
+        if 400 <= response.status < 600:
+            content = await response.text()
+            logger.warning(
+                f"Retrying {url} because status code == {response.status}. Content: {content}"
+            )
+            raise RetryError(f"Code {response.status}")
 
         if response.status not in {200, 304}:
-            if response.status != 302:
-                content = await response.text()
-                logger.debug(
-                    f"Skip {url} because status code == {response.status}. Content: {content}"
-                )
+            content = await response.text()
+            logger.info(f"Skipped {url} because status code == {response.status}. Content: {content}")
             return
 
         # bypass external slashes and so on
