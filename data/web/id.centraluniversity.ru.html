@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="login-pf">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Вход - Центральный университет</title>
+  <base href="/resources/29pg8/login/cu_theme/">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Авторизационный сервис Центрального университета. Центральный университет — первый в России частный вуз на основе STEM-модели: Science, Technology, Engineering, Mathematics "
+  />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noarchive" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://static.tildacdn.com/tild3330-6662-4161-a265-373832643032/fav.png"
+    media="(prefers-color-scheme: light)"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://static.tildacdn.com/tild6530-3832-4532-b535-313065376661/favicon-32x32.png"
+    media="(prefers-color-scheme: dark)"
+  />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    sizes="any"
+    href="https://static.tildacdn.com/tild3833-3539-4138-b365-393361643163/safari-pinned-tab.svg"
+  />
+  <link
+    rel="apple-touch-icon"
+    type="image/png"
+    href="https://static.tildacdn.com/tild6631-6535-4630-b735-393337653032/android-chrome-192x1.png"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/resources/29pg8/login/cu_theme/styles.css?v=9" media="print" onload="this.media='all'">
+  <script>
+    window.authConfiguration = {
+      urls: {
+        baseHref: "/resources/29pg8/login/cu_theme",
+        ssoLoginInOtherTabsUrl: window.location.origin + "/realms/central-university/login-actions/restart?client_id=api-gateway&amp;tab_id=cu-crawler&amp;skip_logout=true",
+        loginRestartFlowUrl: window.location.origin + "/realms/central-university/login-actions/restart?client_id=api-gateway&amp;tab_id=cu-crawler&amp;skip_logout=false",
+        loginResetCredentialsUrl: window.location.origin + "/realms/central-university/login-actions/reset-credentials?client_id=api-gateway&amp;tab_id=cu-crawler",
+        registrationAction: "https://id.centraluniversity.ru/realms/central-university/login-actions/authenticate?session_code=cu-crawler&amp;execution=cu-crawler&amp;client_id=api-gateway&amp;tab_id=cu-crawler",
+        registrationUrl: window.location.origin + "/realms/central-university/login-actions/registration?client_id=api-gateway&amp;tab_id=cu-crawler",
+        loginUrl: window.location.origin + "/realms/central-university/login-actions/authenticate?client_id=api-gateway&amp;tab_id=cu-crawler",
+      
+      },
+      realm: {},
+      template: {},
+      currentState: {
+        userName: "",
+        selectedCredential: "",
+      },
+      messages: {
+        requiredFields: "Required fields",
+        email: "",
+        userName: "",
+        firstName: "",
+        lastName: "",
+        passwordConfirm: "",
+        systemMessage: {},
+      },
+      client: {
+        clientId: "api-gateway",
+        baseUrl: ""
+      },
+      utmCookiesDomain: "centraluniversity.ru"
+    };
+  </script>
+  <!-- script tag removed -->
+  <style>
+    #header {
+      display: none;
+    }
+  </style>
+  <script
+    async
+    src="https://cdn.tbank.ru/twa/ttm/univer/publications/univer/index.js"
+  ></script>
+</head>
+
+<body class="">
+  <app-root></app-root>
+
+  <script src="/resources/29pg8/login/cu_theme/polyfills.js?v=9" type="module"></script>
+  <script src="/resources/29pg8/login/cu_theme/main.js?v=9" type="module"></script>
+
+  <div id="header">
+  <!-- script tag removed -->
+  </div>
+
+    <script>
+      window.authConfiguration.realm.password = true;
+    </script>
+    <script>
+      window.authConfiguration.realm.registrationAllowed = true;
+    </script>
+    <script>
+      window.authConfiguration.realm.loginWithEmailAllowed = true;
+    </script>
+    <script>
+      window.authConfiguration.realm.resetPasswordAllowed = true;
+    </script>
+    <script>
+      window.authConfiguration.urls.loginAction = "https://id.centraluniversity.ru/realms/central-university/login-actions/authenticate?session_code=cu-crawler&amp;execution=cu-crawler&amp;client_id=api-gateway&amp;tab_id=cu-crawler";
+    </script>
+</body>
+</html>
