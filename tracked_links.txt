@@ -64,6 +64,7 @@ centraluniversity.ru/courses
 centraluniversity.ru/courses/cv
 centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
+centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
@@ -74,11 +75,18 @@ centraluniversity.ru/hotel/cloud
 centraluniversity.ru/hotel/cosmos
 centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
+centraluniversity.ru/news
+centraluniversity.ru/nostress
+centraluniversity.ru/nostressevent
+centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
+centraluniversity.ru/rewardparty
+centraluniversity.ru/setting
 centraluniversity.ru/sitemap.xml
 centraluniversity.ru/summer
 centraluniversity.ru/teachers
+centraluniversity.ru/technopreneurship
 centraluniversity.ru/university-meeting
 centraluniversity.ru/visuallyimpaired-main
 education.tbank.ru
@@ -331,6 +339,7 @@ event.centraluniversity.ru/dod1204
 event.centraluniversity.ru/dod1302
 event.centraluniversity.ru/dod1707
 event.centraluniversity.ru/dod1802
+event.centraluniversity.ru/dod2002
 event.centraluniversity.ru/exam
 event.centraluniversity.ru/megadod
 event.centraluniversity.ru/open-day-0312/
@@ -344,6 +353,7 @@ id.centraluniversity.ru/resources/29pg8/login/cu_theme/main.js
 id.centraluniversity.ru/resources/29pg8/login/cu_theme/polyfills.js
 id.centraluniversity.ru/resources/29pg8/login/cu_theme/styles.css
 legal.centraluniversity.ru
+legal.centraluniversity.ru/additionalinformation
 legal.centraluniversity.ru/apply
 legal.centraluniversity.ru/budget
 legal.centraluniversity.ru/common
@@ -353,6 +363,7 @@ legal.centraluniversity.ru/education
 legal.centraluniversity.ru/education/programm
 legal.centraluniversity.ru/education/programm/inform
 legal.centraluniversity.ru/education/programm/math
+legal.centraluniversity.ru/education/programm/math-2
 legal.centraluniversity.ru/education/programm/work
 legal.centraluniversity.ru/edustandarts
 legal.centraluniversity.ru/employees
@@ -361,6 +372,7 @@ legal.centraluniversity.ru/inter
 legal.centraluniversity.ru/meal
 legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/ovz
+legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
 legal.centraluniversity.ru/struct/academsovet
 legal.centraluniversity.ru/struct/rector
