@@ -26,4 +26,3 @@ education.tbank.ru/system/images/browser-old.png
 education.tbank.ru/system/images/chrome.png
 education.tbank.ru/system/images/firefox.png
 education.tbank.ru/system/images/opera.png
-id.centraluniversity.ru/resources/29pg8/login/cu_theme/
