@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://centraluniversity.ru/</loc>
-		<lastmod>2025-01-28T09:28:23+00:00</lastmod>
+		<lastmod>2025-02-05T12:21:52+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/courses</loc>
@@ -110,7 +110,7 @@
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/dpo</loc>
-		<lastmod>2025-01-23T10:18:42+00:00</lastmod>
+		<lastmod>2025-02-05T09:25:56+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/oferta</loc>
