@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/recruiter/</loc>
-        <lastmod>2024-11-27T08:33:52.879Z</lastmod>
+        <lastmod>2025-02-04T14:24:32.184Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -38,7 +38,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/study/</loc>
-        <lastmod>2025-01-29T15:11:52.222Z</lastmod>
+        <lastmod>2025-02-04T13:52:17.578Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -62,7 +62,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/study/fintech_middle/</loc>
-        <lastmod>2025-01-29T15:18:56.669Z</lastmod>
+        <lastmod>2025-02-04T13:52:48.859Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -134,7 +134,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/content_writer/</loc>
-        <lastmod>2025-01-31T10:22:48.183Z</lastmod>
+        <lastmod>2025-02-04T14:02:20.327Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -194,7 +194,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/partnership-schools/</loc>
-        <lastmod>2025-02-03T09:58:05.815Z</lastmod>
+        <lastmod>2025-02-04T09:24:18.481Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -236,7 +236,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/accountant/</loc>
-        <lastmod>2024-11-27T08:24:40.946Z</lastmod>
+        <lastmod>2025-02-04T14:04:00.169Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -248,7 +248,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/analyst/</loc>
-        <lastmod>2025-01-31T10:18:12.408Z</lastmod>
+        <lastmod>2025-02-04T13:58:33.318Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -266,7 +266,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/android/</loc>
-        <lastmod>2025-01-31T10:18:52.317Z</lastmod>
+        <lastmod>2025-02-04T14:01:05.811Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -278,7 +278,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/</loc>
-        <lastmod>2025-01-31T11:34:40.077Z</lastmod>
+        <lastmod>2025-02-04T13:58:55.436Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -290,67 +290,67 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/cpp/</loc>
-        <lastmod>2024-11-27T08:34:06.284Z</lastmod>
+        <lastmod>2025-02-04T14:05:49.281Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/designer/</loc>
-        <lastmod>2025-01-20T07:19:23.737Z</lastmod>
+        <lastmod>2025-02-04T14:06:33.220Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/dotnet/</loc>
-        <lastmod>2025-01-31T10:23:27.883Z</lastmod>
+        <lastmod>2025-02-04T14:07:27.894Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/frontend/</loc>
-        <lastmod>2025-01-31T10:25:19.473Z</lastmod>
+        <lastmod>2025-02-04T14:09:51.875Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/intern_education/</loc>
-        <lastmod>2024-11-27T07:13:02.229Z</lastmod>
+        <lastmod>2025-02-04T14:11:52.286Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/invest_manager/</loc>
-        <lastmod>2025-01-31T10:27:47.633Z</lastmod>
+        <lastmod>2025-02-04T14:19:21.525Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/ml_engineer/</loc>
-        <lastmod>2025-01-31T10:30:42.061Z</lastmod>
+        <lastmod>2025-02-04T14:21:37.379Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/go/</loc>
-        <lastmod>2025-01-31T10:26:29.313Z</lastmod>
+        <lastmod>2025-02-04T14:10:23.316Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/ios/</loc>
-        <lastmod>2025-01-31T10:28:15.315Z</lastmod>
+        <lastmod>2025-02-04T14:19:54.040Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/java/</loc>
-        <lastmod>2025-01-31T10:28:43.952Z</lastmod>
+        <lastmod>2025-02-04T14:20:28.970Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/python/</loc>
-        <lastmod>2025-01-31T10:31:13.882Z</lastmod>
+        <lastmod>2025-02-04T14:22:36.386Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -362,7 +362,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/sre_engineer/</loc>
-        <lastmod>2025-01-31T10:33:04.169Z</lastmod>
+        <lastmod>2025-02-04T14:29:39.700Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -374,7 +374,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/quality_engineer/</loc>
-        <lastmod>2025-01-31T10:31:50.654Z</lastmod>
+        <lastmod>2025-02-04T14:23:54.298Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -392,19 +392,19 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/intern_marketing/</loc>
-        <lastmod>2025-01-31T10:27:13.655Z</lastmod>
+        <lastmod>2025-02-04T14:12:48.903Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/intern_upgrade/</loc>
-        <lastmod>2024-11-27T07:43:41.608Z</lastmod>
+        <lastmod>2025-02-04T14:13:21.533Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/start/scala/</loc>
-        <lastmod>2025-01-31T10:32:26.008Z</lastmod>
+        <lastmod>2025-02-04T14:29:01.788Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -650,7 +650,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/regata-physics/</loc>
-        <lastmod>2025-02-03T14:31:14.581Z</lastmod>
+        <lastmod>2025-02-04T08:29:35.271Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -698,7 +698,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/ad-it-lawyer/</loc>
-        <lastmod>2025-01-31T10:17:36.520Z</lastmod>
+        <lastmod>2025-02-04T14:04:39.941Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -800,7 +800,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/1C_developer/</loc>
-        <lastmod>2024-11-27T07:16:41.080Z</lastmod>
+        <lastmod>2025-02-04T14:03:25.883Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -1100,7 +1100,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/intern_lawyer/</loc>
-        <lastmod>2024-11-27T08:47:25.406Z</lastmod>
+        <lastmod>2025-02-04T14:12:18.223Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -1184,7 +1184,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/dwh/</loc>
-        <lastmod>2025-01-31T10:24:12.318Z</lastmod>
+        <lastmod>2025-02-04T14:08:38.021Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
