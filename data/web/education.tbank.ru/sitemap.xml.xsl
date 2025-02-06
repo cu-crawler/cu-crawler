@@ -224,7 +224,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/academy/msu-vmk-posvyat-2024/</loc>
-        <lastmod>2025-01-27T07:50:06.128Z</lastmod>
+        <lastmod>2025-02-05T07:16:23.957Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -248,13 +248,13 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/start/analyst/</loc>
-        <lastmod>2025-02-04T13:58:33.318Z</lastmod>
+        <lastmod>2025-02-05T12:45:32.495Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://education.tbank.ru/activities/tinkoff_projects/regatta/</loc>
-        <lastmod>2025-01-27T07:52:28.833Z</lastmod>
+        <lastmod>2025-02-05T07:23:14.513Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -284,7 +284,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/activities/tinkoff_projects/hackathon-24h/</loc>
-        <lastmod>2025-02-03T09:41:59.438Z</lastmod>
+        <lastmod>2025-02-05T07:15:13.939Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -650,7 +650,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/regata-physics/</loc>
-        <lastmod>2025-02-04T08:29:35.271Z</lastmod>
+        <lastmod>2025-02-05T09:30:23.852Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -710,7 +710,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/</loc>
-        <lastmod>2025-01-29T15:01:31.667Z</lastmod>
+        <lastmod>2025-02-04T14:58:52.586Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -722,7 +722,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/study/conspectus/</loc>
-        <lastmod>2025-02-03T12:36:40.337Z</lastmod>
+        <lastmod>2025-02-05T13:14:28.552Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -746,7 +746,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/study/conspectus/contest/</loc>
-        <lastmod>2024-10-08T13:40:16.740Z</lastmod>
+        <lastmod>2025-02-05T13:40:21.380Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
