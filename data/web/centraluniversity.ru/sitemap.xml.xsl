@@ -2,130 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 	<url>
 		<loc>https://centraluniversity.ru/</loc>
-		<lastmod>2025-02-05T14:53:24+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:18+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/courses</loc>
-		<lastmod>2025-02-05T14:47:58+00:00</lastmod>
+		<lastmod>2025-02-06T08:06:40+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/courses/recsys</loc>
-		<lastmod>2025-02-05T14:48:41+00:00</lastmod>
+		<lastmod>2025-02-06T08:06:57+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/courses/cv</loc>
-		<lastmod>2025-02-05T14:49:35+00:00</lastmod>
+		<lastmod>2025-02-06T08:07:11+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/contacts</loc>
-		<lastmod>2025-02-05T14:42:29+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:19+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/news</loc>
-		<lastmod>2025-02-05T14:42:29+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:19+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/scholarship</loc>
-		<lastmod>2025-02-05T14:42:29+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:19+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/university-meeting</loc>
-		<lastmod>2025-02-05T14:42:30+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:19+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/summer</loc>
-		<lastmod>2025-02-05T14:42:30+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/network-programs</loc>
-		<lastmod>2025-02-05T14:42:30+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/cu-hse</loc>
-		<lastmod>2025-02-05T14:42:30+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/hotel</loc>
-		<lastmod>2025-02-05T14:47:01+00:00</lastmod>
+		<lastmod>2025-02-06T08:04:33+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/hotel/cloud</loc>
-		<lastmod>2025-02-05T14:47:02+00:00</lastmod>
+		<lastmod>2025-02-06T08:04:35+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor</loc>
-		<lastmod>2025-02-05T14:45:45+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:47+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/business-informatics</loc>
-		<lastmod>2025-02-05T14:45:47+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:49+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/artificial-intelligence</loc>
-		<lastmod>2025-02-05T14:45:49+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:50+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/development</loc>
-		<lastmod>2025-02-05T14:45:52+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:52+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/hse</loc>
-		<lastmod>2025-02-05T14:45:54+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:53+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/mfti</loc>
-		<lastmod>2025-02-05T14:45:55+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:55+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/drip</loc>
-		<lastmod>2025-02-05T14:45:56+00:00</lastmod>
+		<lastmod>2025-02-06T08:03:56+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/datalab</loc>
-		<lastmod>2025-02-05T14:42:31+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/campus</loc>
-		<lastmod>2025-02-05T14:42:31+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/pay</loc>
-		<lastmod>2025-02-05T14:42:31+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:20+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/esb</loc>
-		<lastmod>2025-02-05T14:42:31+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:21+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/courses/forecasting</loc>
-		<lastmod>2025-02-05T14:50:54+00:00</lastmod>
+		<lastmod>2025-02-06T08:07:24+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/courses/nlp</loc>
-		<lastmod>2025-02-05T14:51:42+00:00</lastmod>
+		<lastmod>2025-02-06T08:07:51+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/technopreneurship</loc>
-		<lastmod>2025-02-05T14:52:28+00:00</lastmod>
+		<lastmod>2025-02-06T08:08:14+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/dpo</loc>
-		<lastmod>2025-02-05T14:42:31+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:21+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/oferta</loc>
-		<lastmod>2025-02-05T14:42:31+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:21+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/bachelor/perevod</loc>
-		<lastmod>2025-02-05T14:46:00+00:00</lastmod>
+		<lastmod>2025-02-06T08:04:00+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/gorban-lab</loc>
-		<lastmod>2025-02-05T14:42:32+00:00</lastmod>
+		<lastmod>2025-02-06T08:02:22+00:00</lastmod>
 	</url>
 	<url>
 		<loc>https://centraluniversity.ru/hotel/cosmos</loc>
-		<lastmod>2025-02-05T14:47:04+00:00</lastmod>
+		<lastmod>2025-02-06T08:04:36+00:00</lastmod>
 	</url>
 </urlset>
