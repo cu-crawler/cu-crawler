@@ -65,6 +65,7 @@ centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
 centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
+centraluniversity.ru/datalab
 centraluniversity.ru/dpo
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
@@ -321,7 +322,6 @@ education.tbank.ru/system/script.js
 education.tbank.ru/work/
 ejstand.algocourses.ru/sbornik25/standings.html
 event.centraluniversity.ru
-event.centraluniversity.ru/career
 event.centraluniversity.ru/casecontest
 event.centraluniversity.ru/cgk2024
 event.centraluniversity.ru/contest
@@ -356,12 +356,12 @@ legal.centraluniversity.ru/education
 legal.centraluniversity.ru/education/programm
 legal.centraluniversity.ru/education/programm/math
 legal.centraluniversity.ru/education/programm/math-2
-legal.centraluniversity.ru/education/programm/work
 legal.centraluniversity.ru/employees
 legal.centraluniversity.ru/grants
-legal.centraluniversity.ru/meal
+legal.centraluniversity.ru/inter
 legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/paidedu
+legal.centraluniversity.ru/vacant
 my.centraluniversity.ru/element-registration-form
 omutai.centraluniversity.ru
 omutai.centraluniversity.ru/datalab
