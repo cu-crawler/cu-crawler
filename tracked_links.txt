@@ -60,6 +60,7 @@ centraluniversity.ru/bachelor/perevod
 centraluniversity.ru/bachelor/scholarship
 centraluniversity.ru/campus
 centraluniversity.ru/contacts
+centraluniversity.ru/courses
 centraluniversity.ru/courses/cv
 centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
@@ -67,6 +68,7 @@ centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
+centraluniversity.ru/esb
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
 centraluniversity.ru/hotel/cloud
@@ -76,6 +78,7 @@ centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
 centraluniversity.ru/nostressevent
+centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
@@ -84,6 +87,7 @@ centraluniversity.ru/sitemap.xml
 centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
+centraluniversity.ru/university-meeting
 centraluniversity.ru/visuallyimpaired-main
 education.tbank.ru
 education.tbank.ru/academy/
@@ -322,6 +326,7 @@ education.tbank.ru/system/script.js
 education.tbank.ru/work/
 ejstand.algocourses.ru/sbornik25/standings.html
 event.centraluniversity.ru
+event.centraluniversity.ru/career
 event.centraluniversity.ru/casecontest
 event.centraluniversity.ru/cgk2024
 event.centraluniversity.ru/contest
@@ -354,13 +359,22 @@ legal.centraluniversity.ru/common
 legal.centraluniversity.ru/document
 legal.centraluniversity.ru/education
 legal.centraluniversity.ru/education/programm
+legal.centraluniversity.ru/education/programm/inform
 legal.centraluniversity.ru/education/programm/math
 legal.centraluniversity.ru/education/programm/math-2
+legal.centraluniversity.ru/education/programm/work
 legal.centraluniversity.ru/employees
 legal.centraluniversity.ru/grants
 legal.centraluniversity.ru/inter
+legal.centraluniversity.ru/meal
 legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/paidedu
+legal.centraluniversity.ru/struct
+legal.centraluniversity.ru/struct/academsovet
+legal.centraluniversity.ru/struct/rector
+legal.centraluniversity.ru/struct/sobr
+legal.centraluniversity.ru/struct/trustees
+legal.centraluniversity.ru/teachers
 legal.centraluniversity.ru/vacant
 my.centraluniversity.ru/element-registration-form
 omutai.centraluniversity.ru
