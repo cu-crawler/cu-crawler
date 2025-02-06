@@ -78,7 +78,6 @@ centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
 centraluniversity.ru/nostressevent
-centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
@@ -371,7 +370,6 @@ legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
 legal.centraluniversity.ru/struct/academsovet
-legal.centraluniversity.ru/struct/rector
 legal.centraluniversity.ru/struct/sobr
 legal.centraluniversity.ru/struct/trustees
 legal.centraluniversity.ru/teachers
