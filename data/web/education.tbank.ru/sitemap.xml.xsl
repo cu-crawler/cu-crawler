@@ -542,7 +542,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/sbory_inf/</loc>
-        <lastmod>2025-02-03T07:19:37.746Z</lastmod>
+        <lastmod>2025-02-06T16:43:46.983Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -602,7 +602,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/sbory-math-region/</loc>
-        <lastmod>2025-02-03T07:45:52.293Z</lastmod>
+        <lastmod>2025-02-06T16:40:05.441Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -662,7 +662,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/toi/</loc>
-        <lastmod>2025-02-03T07:52:17.598Z</lastmod>
+        <lastmod>2025-02-06T15:34:40.235Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -710,7 +710,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/</loc>
-        <lastmod>2025-02-04T14:58:52.586Z</lastmod>
+        <lastmod>2025-02-06T16:52:24.053Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -872,7 +872,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/</loc>
-        <lastmod>2025-02-03T10:09:54.407Z</lastmod>
+        <lastmod>2025-02-06T16:11:53.685Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -914,7 +914,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/physics/</loc>
-        <lastmod>2025-02-03T07:30:50.192Z</lastmod>
+        <lastmod>2025-02-06T16:50:01.493Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -1358,7 +1358,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/sbory_math/</loc>
-        <lastmod>2025-02-03T10:07:18.298Z</lastmod>
+        <lastmod>2025-02-06T16:47:39.329Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
