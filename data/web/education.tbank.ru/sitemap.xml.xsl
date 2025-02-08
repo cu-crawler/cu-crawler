@@ -710,7 +710,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/</loc>
-        <lastmod>2025-02-06T16:52:24.053Z</lastmod>
+        <lastmod>2025-02-07T20:39:50.896Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -746,7 +746,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/study/conspectus/contest/</loc>
-        <lastmod>2025-02-05T13:40:21.380Z</lastmod>
+        <lastmod>2025-02-07T08:36:26.566Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
