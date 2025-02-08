@@ -66,6 +66,7 @@ centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
 centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
+centraluniversity.ru/datalab
 centraluniversity.ru/dpo
 centraluniversity.ru/esb
 centraluniversity.ru/gorban-lab
