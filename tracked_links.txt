@@ -16,6 +16,7 @@ algocourses.ru/standings/b_fall2024
 algocourses.ru/standings/b_fall2024_2
 algocourses.ru/standings/b_razn2024
 algocourses.ru/standings/bp_dist2024
+algocourses.ru/standings/bp_dist2024_2
 algocourses.ru/standings/bp_fall2024
 algocourses.ru/standings/bp_fall2024_2
 algocourses.ru/standings/c_dist2024
