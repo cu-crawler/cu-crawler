@@ -360,11 +360,8 @@ legal.centraluniversity.ru/common
 legal.centraluniversity.ru/document
 legal.centraluniversity.ru/education
 legal.centraluniversity.ru/education/programm
-legal.centraluniversity.ru/education/programm/inform
 legal.centraluniversity.ru/education/programm/math
 legal.centraluniversity.ru/education/programm/math-2
-legal.centraluniversity.ru/education/programm/work
-legal.centraluniversity.ru/employees
 legal.centraluniversity.ru/grants
 legal.centraluniversity.ru/inter
 legal.centraluniversity.ru/meal
