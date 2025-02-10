@@ -70,7 +70,6 @@ centraluniversity.ru/cu-hse
 centraluniversity.ru/datalab
 centraluniversity.ru/dpo
 centraluniversity.ru/esb
-centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
 centraluniversity.ru/hotel/cloud
 centraluniversity.ru/hotel/cosmos
