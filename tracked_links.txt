@@ -78,6 +78,7 @@ centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
+centraluniversity.ru/nostressevent
 centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
@@ -87,6 +88,7 @@ centraluniversity.ru/sitemap.xml
 centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
+centraluniversity.ru/university-meeting
 centraluniversity.ru/visuallyimpaired-main
 education.tbank.ru
 education.tbank.ru/academy/
