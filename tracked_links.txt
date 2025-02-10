@@ -60,14 +60,18 @@ centraluniversity.ru/bachelor/perevod
 centraluniversity.ru/bachelor/scholarship
 centraluniversity.ru/campus
 centraluniversity.ru/contacts
+centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
 centraluniversity.ru/dpo
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
+centraluniversity.ru/hotel/cloud
+centraluniversity.ru/hotel/cosmos
 centraluniversity.ru/laboratory
 centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
+centraluniversity.ru/nostressevent
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/summer
@@ -313,7 +317,6 @@ ejstand.algocourses.ru/sbornik25/standings.html
 event.centraluniversity.ru
 event.centraluniversity.ru/career
 event.centraluniversity.ru/casecontest
-event.centraluniversity.ru/cgk2024
 event.centraluniversity.ru/contest
 event.centraluniversity.ru/dataton
 event.centraluniversity.ru/dod0103
@@ -342,8 +345,7 @@ legal.centraluniversity.ru/budget
 legal.centraluniversity.ru/common
 legal.centraluniversity.ru/document
 legal.centraluniversity.ru/education
-legal.centraluniversity.ru/grants
-legal.centraluniversity.ru/paidedu
+legal.centraluniversity.ru/teachers
 legal.centraluniversity.ru/vacant
 my.centraluniversity.ru/element-registration-form
 omutai.centraluniversity.ru
