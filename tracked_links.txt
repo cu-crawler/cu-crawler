@@ -67,7 +67,9 @@ centraluniversity.ru/courses/forecasting
 centraluniversity.ru/courses/nlp
 centraluniversity.ru/courses/recsys
 centraluniversity.ru/cu-hse
+centraluniversity.ru/datalab
 centraluniversity.ru/dpo
+centraluniversity.ru/esb
 centraluniversity.ru/gorban-lab
 centraluniversity.ru/hotel
 centraluniversity.ru/hotel/cloud
@@ -77,9 +79,12 @@ centraluniversity.ru/network-programs
 centraluniversity.ru/news
 centraluniversity.ru/nostress
 centraluniversity.ru/nostressevent
+centraluniversity.ru/oferta
 centraluniversity.ru/pay
 centraluniversity.ru/price
 centraluniversity.ru/rewardparty
+centraluniversity.ru/setting
+centraluniversity.ru/sitemap.xml
 centraluniversity.ru/summer
 centraluniversity.ru/teachers
 centraluniversity.ru/technopreneurship
@@ -367,6 +372,7 @@ legal.centraluniversity.ru/objects
 legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
 legal.centraluniversity.ru/struct/academsovet
+legal.centraluniversity.ru/struct/rector
 legal.centraluniversity.ru/struct/sobr
 legal.centraluniversity.ru/struct/trustees
 legal.centraluniversity.ru/teachers
