@@ -373,7 +373,6 @@ legal.centraluniversity.ru/paidedu
 legal.centraluniversity.ru/struct
 legal.centraluniversity.ru/struct/academsovet
 legal.centraluniversity.ru/struct/rector
-legal.centraluniversity.ru/struct/sobr
 legal.centraluniversity.ru/struct/trustees
 legal.centraluniversity.ru/teachers
 legal.centraluniversity.ru/vacant
