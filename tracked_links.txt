@@ -348,7 +348,6 @@ event.centraluniversity.ru/partner_release
 event.centraluniversity.ru/reshis
 event.centraluniversity.ru/seeyoufest2024
 event.centraluniversity.ru/turnir-reshis
-event.centraluniversity.ru/visuallyimpaired-events
 id.centraluniversity.ru/
 id.centraluniversity.ru/resources/29pg8/login/cu_theme/main.js
 id.centraluniversity.ru/resources/29pg8/login/cu_theme/polyfills.js
