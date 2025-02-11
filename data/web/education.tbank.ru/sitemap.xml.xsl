@@ -650,7 +650,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/events/regata-physics/</loc>
-        <lastmod>2025-02-05T09:30:23.852Z</lastmod>
+        <lastmod>2025-02-10T12:02:55.994Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
@@ -710,7 +710,7 @@
     </url>
     <url>
         <loc>https://education.tbank.ru/school/</loc>
-        <lastmod>2025-02-07T20:39:50.896Z</lastmod>
+        <lastmod>2025-02-10T11:55:30.210Z</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
